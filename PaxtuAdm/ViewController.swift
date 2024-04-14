@@ -22,8 +22,9 @@ class ViewController: UIViewController {
         setupConstraint()
     }
     
+    //Teste para subir o commit
     private func setupAnimation() {
-        view.backgroundColor = .white
+        view.backgroundColor = .black
         animationView.animation = LottieAnimation.named("launch_screen")
         animationView.isHidden = false
         animationView.loopMode = .playOnce
