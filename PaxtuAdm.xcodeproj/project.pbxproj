@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12E5DF72A86D540F2E9F806A /* Pods_PaxtuAdm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257DB829726CF10FD665ED85 /* Pods_PaxtuAdm.framework */; };
+		5728BB8B2BCC685F002BC212 /* launch_screen.json in Resources */ = {isa = PBXBuildFile; fileRef = 5728BB8A2BCC685F002BC212 /* launch_screen.json */; };
+		5728BB8D2BCC76AA002BC212 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5728BB8C2BCC76AA002BC212 /* LoginViewController.swift */; };
+		574A755D2BCC5B3A0042E310 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574A755C2BCC5B3A0042E310 /* AppDelegate.swift */; };
+		574A755F2BCC5B3A0042E310 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574A755E2BCC5B3A0042E310 /* SceneDelegate.swift */; };
+		574A75612BCC5B3A0042E310 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574A75602BCC5B3A0042E310 /* ViewController.swift */; };
+		574A75672BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 574A75652BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld */; };
+		574A75692BCC5B3B0042E310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574A75682BCC5B3B0042E310 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		257DB829726CF10FD665ED85 /* Pods_PaxtuAdm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaxtuAdm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5728BB8A2BCC685F002BC212 /* launch_screen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launch_screen.json; sourceTree = "<group>"; };
+		5728BB8C2BCC76AA002BC212 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		574A75592BCC5B3A0042E310 /* PaxtuAdm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaxtuAdm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		574A755C2BCC5B3A0042E310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		574A755E2BCC5B3A0042E310 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		574A75602BCC5B3A0042E310 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		574A75662BCC5B3A0042E310 /* PaxtuAdm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PaxtuAdm.xcdatamodel; sourceTree = "<group>"; };
+		574A75682BCC5B3B0042E310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		574A756D2BCC5B3B0042E310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		756AB1B7AFD2ADE9335097E5 /* Pods-PaxtuAdm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaxtuAdm.debug.xcconfig"; path = "Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm.debug.xcconfig"; sourceTree = "<group>"; };
+		F6037990D2AE5754D671350F /* Pods-PaxtuAdm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaxtuAdm.release.xcconfig"; path = "Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		574A75562BCC5B3A0042E310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E5DF72A86D540F2E9F806A /* Pods_PaxtuAdm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F9420E0BE86ED2298F35298 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				257DB829726CF10FD665ED85 /* Pods_PaxtuAdm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5728BB892BCC6850002BC212 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				5728BB8A2BCC685F002BC212 /* launch_screen.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		574A75502BCC5B3A0042E310 = {
+			isa = PBXGroup;
+			children = (
+				574A755B2BCC5B3A0042E310 /* PaxtuAdm */,
+				574A755A2BCC5B3A0042E310 /* Products */,
+				81935EF5DC94D8E3C646AC66 /* Pods */,
+				4F9420E0BE86ED2298F35298 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		574A755A2BCC5B3A0042E310 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				574A75592BCC5B3A0042E310 /* PaxtuAdm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		574A755B2BCC5B3A0042E310 /* PaxtuAdm */ = {
+			isa = PBXGroup;
+			children = (
+				5728BB892BCC6850002BC212 /* Animation */,
+				574A755C2BCC5B3A0042E310 /* AppDelegate.swift */,
+				574A755E2BCC5B3A0042E310 /* SceneDelegate.swift */,
+				574A75602BCC5B3A0042E310 /* ViewController.swift */,
+				574A75682BCC5B3B0042E310 /* Assets.xcassets */,
+				574A756D2BCC5B3B0042E310 /* Info.plist */,
+				574A75652BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld */,
+				5728BB8C2BCC76AA002BC212 /* LoginViewController.swift */,
+			);
+			path = PaxtuAdm;
+			sourceTree = "<group>";
+		};
+		81935EF5DC94D8E3C646AC66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				756AB1B7AFD2ADE9335097E5 /* Pods-PaxtuAdm.debug.xcconfig */,
+				F6037990D2AE5754D671350F /* Pods-PaxtuAdm.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		574A75582BCC5B3A0042E310 /* PaxtuAdm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 574A75702BCC5B3B0042E310 /* Build configuration list for PBXNativeTarget "PaxtuAdm" */;
+			buildPhases = (
+				77C3D02FF67F073AAE71685F /* [CP] Check Pods Manifest.lock */,
+				574A75552BCC5B3A0042E310 /* Sources */,
+				574A75562BCC5B3A0042E310 /* Frameworks */,
+				574A75572BCC5B3A0042E310 /* Resources */,
+				B186019E41D6FE0855DA336D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaxtuAdm;
+			productName = PaxtuAdm;
+			productReference = 574A75592BCC5B3A0042E310 /* PaxtuAdm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		574A75512BCC5B3A0042E310 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					574A75582BCC5B3A0042E310 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 574A75542BCC5B3A0042E310 /* Build configuration list for PBXProject "PaxtuAdm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 574A75502BCC5B3A0042E310;
+			productRefGroup = 574A755A2BCC5B3A0042E310 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				574A75582BCC5B3A0042E310 /* PaxtuAdm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		574A75572BCC5B3A0042E310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5728BB8B2BCC685F002BC212 /* launch_screen.json in Resources */,
+				574A75692BCC5B3B0042E310 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77C3D02FF67F073AAE71685F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaxtuAdm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B186019E41D6FE0855DA336D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		574A75552BCC5B3A0042E310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574A75612BCC5B3A0042E310 /* ViewController.swift in Sources */,
+				574A75672BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld in Sources */,
+				574A755D2BCC5B3A0042E310 /* AppDelegate.swift in Sources */,
+				5728BB8D2BCC76AA002BC212 /* LoginViewController.swift in Sources */,
+				574A755F2BCC5B3A0042E310 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		574A756E2BCC5B3B0042E310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		574A756F2BCC5B3B0042E310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		574A75712BCC5B3B0042E310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 756AB1B7AFD2ADE9335097E5 /* Pods-PaxtuAdm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7D8B57U5CD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PaxtuAdm/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = escoteiro.PaxtuAdm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		574A75722BCC5B3B0042E310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6037990D2AE5754D671350F /* Pods-PaxtuAdm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7D8B57U5CD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PaxtuAdm/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = escoteiro.PaxtuAdm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		574A75542BCC5B3A0042E310 /* Build configuration list for PBXProject "PaxtuAdm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				574A756E2BCC5B3B0042E310 /* Debug */,
+				574A756F2BCC5B3B0042E310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		574A75702BCC5B3B0042E310 /* Build configuration list for PBXNativeTarget "PaxtuAdm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				574A75712BCC5B3B0042E310 /* Debug */,
+				574A75722BCC5B3B0042E310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		574A75652BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				574A75662BCC5B3A0042E310 /* PaxtuAdm.xcdatamodel */,
+			);
+			currentVersion = 574A75662BCC5B3A0042E310 /* PaxtuAdm.xcdatamodel */;
+			path = PaxtuAdm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 574A75512BCC5B3A0042E310 /* Project object */;
+}
