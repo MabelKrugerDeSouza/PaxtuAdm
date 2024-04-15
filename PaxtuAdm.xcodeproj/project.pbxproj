@@ -7,29 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12E5DF72A86D540F2E9F806A /* Pods_PaxtuAdm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257DB829726CF10FD665ED85 /* Pods_PaxtuAdm.framework */; };
 		5728BB8B2BCC685F002BC212 /* launch_screen.json in Resources */ = {isa = PBXBuildFile; fileRef = 5728BB8A2BCC685F002BC212 /* launch_screen.json */; };
 		5728BB8D2BCC76AA002BC212 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5728BB8C2BCC76AA002BC212 /* LoginViewController.swift */; };
 		574A755D2BCC5B3A0042E310 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574A755C2BCC5B3A0042E310 /* AppDelegate.swift */; };
 		574A755F2BCC5B3A0042E310 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574A755E2BCC5B3A0042E310 /* SceneDelegate.swift */; };
-		574A75612BCC5B3A0042E310 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574A75602BCC5B3A0042E310 /* ViewController.swift */; };
+		574A75612BCC5B3A0042E310 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574A75602BCC5B3A0042E310 /* LaunchScreenViewController.swift */; };
 		574A75672BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 574A75652BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld */; };
 		574A75692BCC5B3B0042E310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574A75682BCC5B3B0042E310 /* Assets.xcassets */; };
+		5785FAD32BCCA223003C07C1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAD22BCCA223003C07C1 /* LoginView.swift */; };
+		5785FAD62BCCAA17003C07C1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAD52BCCAA17003C07C1 /* UIViewExtension.swift */; };
+		ED28EA64A9BACF9AD410179C /* Pods_PaxtuAdm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7880826EF1E60F83E7BDF38 /* Pods_PaxtuAdm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		257DB829726CF10FD665ED85 /* Pods_PaxtuAdm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaxtuAdm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06D0CF20EFBED90F57C9E6D4 /* Pods-PaxtuAdm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaxtuAdm.debug.xcconfig"; path = "Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm.debug.xcconfig"; sourceTree = "<group>"; };
+		2C5CA32D0DB61F8A60A77836 /* Pods-PaxtuAdm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaxtuAdm.release.xcconfig"; path = "Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm.release.xcconfig"; sourceTree = "<group>"; };
 		5728BB8A2BCC685F002BC212 /* launch_screen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launch_screen.json; sourceTree = "<group>"; };
 		5728BB8C2BCC76AA002BC212 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		574A75592BCC5B3A0042E310 /* PaxtuAdm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaxtuAdm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		574A755C2BCC5B3A0042E310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		574A755E2BCC5B3A0042E310 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		574A75602BCC5B3A0042E310 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		574A75602BCC5B3A0042E310 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		574A75662BCC5B3A0042E310 /* PaxtuAdm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PaxtuAdm.xcdatamodel; sourceTree = "<group>"; };
 		574A75682BCC5B3B0042E310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		574A756D2BCC5B3B0042E310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		756AB1B7AFD2ADE9335097E5 /* Pods-PaxtuAdm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaxtuAdm.debug.xcconfig"; path = "Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm.debug.xcconfig"; sourceTree = "<group>"; };
-		F6037990D2AE5754D671350F /* Pods-PaxtuAdm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaxtuAdm.release.xcconfig"; path = "Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm.release.xcconfig"; sourceTree = "<group>"; };
+		5785FAD22BCCA223003C07C1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5785FAD52BCCAA17003C07C1 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		D7880826EF1E60F83E7BDF38 /* Pods_PaxtuAdm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaxtuAdm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,24 +41,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12E5DF72A86D540F2E9F806A /* Pods_PaxtuAdm.framework in Frameworks */,
+				ED28EA64A9BACF9AD410179C /* Pods_PaxtuAdm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4F9420E0BE86ED2298F35298 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				257DB829726CF10FD665ED85 /* Pods_PaxtuAdm.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		5728BB892BCC6850002BC212 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				5785FACF2BCCA1BF003C07C1 /* LaunchScreen */,
 				5728BB8A2BCC685F002BC212 /* launch_screen.json */,
 			);
 			path = Animation;
@@ -66,7 +63,7 @@
 				574A755B2BCC5B3A0042E310 /* PaxtuAdm */,
 				574A755A2BCC5B3A0042E310 /* Products */,
 				81935EF5DC94D8E3C646AC66 /* Pods */,
-				4F9420E0BE86ED2298F35298 /* Frameworks */,
+				DABB2D4533245D62F2584BCE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,24 +79,65 @@
 			isa = PBXGroup;
 			children = (
 				5728BB892BCC6850002BC212 /* Animation */,
+				5785FAD42BCCA9FF003C07C1 /* Extensions */,
+				5785FAD02BCCA201003C07C1 /* Login */,
 				574A755C2BCC5B3A0042E310 /* AppDelegate.swift */,
 				574A755E2BCC5B3A0042E310 /* SceneDelegate.swift */,
-				574A75602BCC5B3A0042E310 /* ViewController.swift */,
 				574A75682BCC5B3B0042E310 /* Assets.xcassets */,
 				574A756D2BCC5B3B0042E310 /* Info.plist */,
 				574A75652BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld */,
-				5728BB8C2BCC76AA002BC212 /* LoginViewController.swift */,
 			);
 			path = PaxtuAdm;
+			sourceTree = "<group>";
+		};
+		5785FACF2BCCA1BF003C07C1 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				574A75602BCC5B3A0042E310 /* LaunchScreenViewController.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		5785FAD02BCCA201003C07C1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5785FAD12BCCA20C003C07C1 /* UI */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5785FAD12BCCA20C003C07C1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5728BB8C2BCC76AA002BC212 /* LoginViewController.swift */,
+				5785FAD22BCCA223003C07C1 /* LoginView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5785FAD42BCCA9FF003C07C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5785FAD52BCCAA17003C07C1 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		81935EF5DC94D8E3C646AC66 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				756AB1B7AFD2ADE9335097E5 /* Pods-PaxtuAdm.debug.xcconfig */,
-				F6037990D2AE5754D671350F /* Pods-PaxtuAdm.release.xcconfig */,
+				06D0CF20EFBED90F57C9E6D4 /* Pods-PaxtuAdm.debug.xcconfig */,
+				2C5CA32D0DB61F8A60A77836 /* Pods-PaxtuAdm.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DABB2D4533245D62F2584BCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7880826EF1E60F83E7BDF38 /* Pods_PaxtuAdm.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,11 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 574A75702BCC5B3B0042E310 /* Build configuration list for PBXNativeTarget "PaxtuAdm" */;
 			buildPhases = (
-				77C3D02FF67F073AAE71685F /* [CP] Check Pods Manifest.lock */,
+				02440DD125B00B17F4DD6C22 /* [CP] Check Pods Manifest.lock */,
 				574A75552BCC5B3A0042E310 /* Sources */,
 				574A75562BCC5B3A0042E310 /* Frameworks */,
 				574A75572BCC5B3A0042E310 /* Resources */,
-				B186019E41D6FE0855DA336D /* [CP] Embed Pods Frameworks */,
+				C1DCCC814CFA1673F28714F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,7 +208,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		77C3D02FF67F073AAE71685F /* [CP] Check Pods Manifest.lock */ = {
+		02440DD125B00B17F4DD6C22 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,7 +230,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B186019E41D6FE0855DA336D /* [CP] Embed Pods Frameworks */ = {
+		C1DCCC814CFA1673F28714F1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -216,9 +254,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				574A75612BCC5B3A0042E310 /* ViewController.swift in Sources */,
+				5785FAD32BCCA223003C07C1 /* LoginView.swift in Sources */,
+				574A75612BCC5B3A0042E310 /* LaunchScreenViewController.swift in Sources */,
 				574A75672BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld in Sources */,
 				574A755D2BCC5B3A0042E310 /* AppDelegate.swift in Sources */,
+				5785FAD62BCCAA17003C07C1 /* UIViewExtension.swift in Sources */,
 				5728BB8D2BCC76AA002BC212 /* LoginViewController.swift in Sources */,
 				574A755F2BCC5B3A0042E310 /* SceneDelegate.swift in Sources */,
 			);
@@ -348,7 +388,7 @@
 		};
 		574A75712BCC5B3B0042E310 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 756AB1B7AFD2ADE9335097E5 /* Pods-PaxtuAdm.debug.xcconfig */;
+			baseConfigurationReference = 06D0CF20EFBED90F57C9E6D4 /* Pods-PaxtuAdm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -377,7 +417,7 @@
 		};
 		574A75722BCC5B3B0042E310 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6037990D2AE5754D671350F /* Pods-PaxtuAdm.release.xcconfig */;
+			baseConfigurationReference = 2C5CA32D0DB61F8A60A77836 /* Pods-PaxtuAdm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

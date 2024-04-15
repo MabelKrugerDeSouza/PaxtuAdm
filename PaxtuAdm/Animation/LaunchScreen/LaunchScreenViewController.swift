@@ -8,7 +8,7 @@
 import UIKit
 import Lottie
 
-class ViewController: UIViewController {
+class LaunchScreenViewController: UIViewController {
     
     lazy var animationView: LottieAnimationView = {
         let view = LottieAnimationView()
