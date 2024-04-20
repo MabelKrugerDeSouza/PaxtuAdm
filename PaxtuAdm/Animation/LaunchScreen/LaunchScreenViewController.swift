@@ -8,7 +8,7 @@
 import UIKit
 import Lottie
 
-class LaunchScreenViewController: UIViewController {
+final class LaunchScreenViewController: UIViewController {
     
     lazy var animationView: LottieAnimationView = {
         let view = LottieAnimationView()
@@ -22,9 +22,8 @@ class LaunchScreenViewController: UIViewController {
         setupConstraint()
     }
     
-    //Teste para subir o commit
     private func setupAnimation() {
-        view.backgroundColor = .black
+        view.backgroundColor = .white
         animationView.animation = LottieAnimation.named("launch_screen")
         animationView.isHidden = false
         animationView.loopMode = .playOnce
