@@ -16,15 +16,19 @@ protocol LoginInteractorProtocol: AnyObject {
 final class LoginInteractor: LoginInteractorProtocol {
     
     private let presenter: LoginPresenterProtocol
+    private let coordinator: PaxtuCoordinatorProtocol
     
-    init(presenter: LoginPresenterProtocol) {
+    init(presenter: LoginPresenterProtocol, coordinator: PaxtuCoordinatorProtocol) {
         self.presenter = presenter
+        self.coordinator = coordinator
     }
     
     func loadView() {
         presenter.presentView()
     }
     
-    func loadHome(){}
+    func loadHome(){
+        coordinator.goToHome()
+    }
     func loadForgotPassword(){}
 }

@@ -43,7 +43,7 @@ final class CustomButton: UIButton {
     
     private func setupButtom() {
         translatesAutoresizingMaskIntoConstraints = false
-        heightAnchor.constraint(equalToConstant: 48).isActive = true
+        heightAnchor.constraint(equalToConstant: 64).isActive = true
         titleLabel?.font = .HelveticaNeueBoldSixteen
         layer.cornerRadius = 10
         layer.masksToBounds = true

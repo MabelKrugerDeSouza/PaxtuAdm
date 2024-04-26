@@ -11,7 +11,6 @@
 		5728BB8B2BCC685F002BC212 /* launch_screen.json in Resources */ = {isa = PBXBuildFile; fileRef = 5728BB8A2BCC685F002BC212 /* launch_screen.json */; };
 		5728BB8D2BCC76AA002BC212 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5728BB8C2BCC76AA002BC212 /* LoginViewController.swift */; };
 		574A755D2BCC5B3A0042E310 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574A755C2BCC5B3A0042E310 /* AppDelegate.swift */; };
-		574A755F2BCC5B3A0042E310 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574A755E2BCC5B3A0042E310 /* SceneDelegate.swift */; };
 		574A75612BCC5B3A0042E310 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574A75602BCC5B3A0042E310 /* LaunchScreenViewController.swift */; };
 		574A75672BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 574A75652BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld */; };
 		574A75692BCC5B3B0042E310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574A75682BCC5B3B0042E310 /* Assets.xcassets */; };
@@ -27,6 +26,13 @@
 		5785FAEA2BD4623C003C07C1 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAE92BD4623C003C07C1 /* LoginModel.swift */; };
 		5785FAED2BD46371003C07C1 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAEC2BD46371003C07C1 /* LoginPresenter.swift */; };
 		5785FAF12BD46B2E003C07C1 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAF02BD46B2E003C07C1 /* LoginInteractor.swift */; };
+		5785FAF42BD46F68003C07C1 /* PaxtuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAF32BD46F68003C07C1 /* PaxtuCoordinator.swift */; };
+		5785FAF82BD46FC8003C07C1 /* LauchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAF72BD46FC8003C07C1 /* LauchScreenView.swift */; };
+		5785FAFB2BD471AE003C07C1 /* AnimationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAFA2BD471AE003C07C1 /* AnimationModel.swift */; };
+		5785FAFE2BD472EC003C07C1 /* LauchScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAFD2BD472EC003C07C1 /* LauchScreenPresenter.swift */; };
+		5785FB012BD473A1003C07C1 /* LauchScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FB002BD473A1003C07C1 /* LauchScreenInteractor.swift */; };
+		5785FB042BD4A922003C07C1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FB032BD4A921003C07C1 /* HomeViewController.swift */; };
+		5785FB062BD4AA94003C07C1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FB052BD4AA94003C07C1 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +42,6 @@
 		5728BB8C2BCC76AA002BC212 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		574A75592BCC5B3A0042E310 /* PaxtuAdm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaxtuAdm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		574A755C2BCC5B3A0042E310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		574A755E2BCC5B3A0042E310 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		574A75602BCC5B3A0042E310 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		574A75662BCC5B3A0042E310 /* PaxtuAdm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PaxtuAdm.xcdatamodel; sourceTree = "<group>"; };
 		574A75682BCC5B3B0042E310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +58,13 @@
 		5785FAE92BD4623C003C07C1 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		5785FAEC2BD46371003C07C1 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		5785FAF02BD46B2E003C07C1 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		5785FAF32BD46F68003C07C1 /* PaxtuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaxtuCoordinator.swift; sourceTree = "<group>"; };
+		5785FAF72BD46FC8003C07C1 /* LauchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchScreenView.swift; sourceTree = "<group>"; };
+		5785FAFA2BD471AE003C07C1 /* AnimationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationModel.swift; sourceTree = "<group>"; };
+		5785FAFD2BD472EC003C07C1 /* LauchScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchScreenPresenter.swift; sourceTree = "<group>"; };
+		5785FB002BD473A1003C07C1 /* LauchScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchScreenInteractor.swift; sourceTree = "<group>"; };
+		5785FB032BD4A921003C07C1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5785FB052BD4AA94003C07C1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DD2739F9D1900EB154119BC5 /* Pods-PaxtuAdm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaxtuAdm.release.xcconfig"; path = "Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +83,6 @@
 		5728BB892BCC6850002BC212 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				5785FACF2BCCA1BF003C07C1 /* LaunchScreen */,
 				5728BB8A2BCC685F002BC212 /* launch_screen.json */,
 			);
 			path = Animation;
@@ -103,7 +114,6 @@
 				5728BB892BCC6850002BC212 /* Animation */,
 				5785FAD42BCCA9FF003C07C1 /* Extensions */,
 				574A755C2BCC5B3A0042E310 /* AppDelegate.swift */,
-				574A755E2BCC5B3A0042E310 /* SceneDelegate.swift */,
 				574A75682BCC5B3B0042E310 /* Assets.xcassets */,
 				574A756D2BCC5B3B0042E310 /* Info.plist */,
 				574A75652BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld */,
@@ -114,7 +124,10 @@
 		5785FACF2BCCA1BF003C07C1 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
-				574A75602BCC5B3A0042E310 /* LaunchScreenViewController.swift */,
+				5785FAFF2BD47393003C07C1 /* Interactor */,
+				5785FAFC2BD472DC003C07C1 /* Presenter */,
+				5785FAF92BD471A6003C07C1 /* Model */,
+				5785FAF62BD46FB7003C07C1 /* UI */,
 			);
 			path = LaunchScreen;
 			sourceTree = "<group>";
@@ -204,9 +217,70 @@
 		5785FAEF2BD46B13003C07C1 /* Paxtu */ = {
 			isa = PBXGroup;
 			children = (
+				5785FAF52BD46F7F003C07C1 /* Home */,
 				5785FAD02BCCA201003C07C1 /* Login */,
+				5785FACF2BCCA1BF003C07C1 /* LaunchScreen */,
+				5785FAF22BD46F5E003C07C1 /* Commons */,
 			);
 			path = Paxtu;
+			sourceTree = "<group>";
+		};
+		5785FAF22BD46F5E003C07C1 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				5785FAF32BD46F68003C07C1 /* PaxtuCoordinator.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		5785FAF52BD46F7F003C07C1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5785FB022BD4A91A003C07C1 /* UI */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5785FAF62BD46FB7003C07C1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				574A75602BCC5B3A0042E310 /* LaunchScreenViewController.swift */,
+				5785FAF72BD46FC8003C07C1 /* LauchScreenView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5785FAF92BD471A6003C07C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5785FAFA2BD471AE003C07C1 /* AnimationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5785FAFC2BD472DC003C07C1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5785FAFD2BD472EC003C07C1 /* LauchScreenPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5785FAFF2BD47393003C07C1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5785FB002BD473A1003C07C1 /* LauchScreenInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5785FB022BD4A91A003C07C1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5785FB032BD4A921003C07C1 /* HomeViewController.swift */,
+				5785FB052BD4AA94003C07C1 /* HomeView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		7C1C7F393DC0CDFE132B8B2A /* Frameworks */ = {
@@ -344,18 +418,24 @@
 				5785FAED2BD46371003C07C1 /* LoginPresenter.swift in Sources */,
 				5785FAD32BCCA223003C07C1 /* LoginView.swift in Sources */,
 				5785FADA2BCF52F7003C07C1 /* UIFontExtension.swift in Sources */,
+				5785FAFB2BD471AE003C07C1 /* AnimationModel.swift in Sources */,
 				5785FAE02BD40B4C003C07C1 /* InputInformationModel.swift in Sources */,
+				5785FB012BD473A1003C07C1 /* LauchScreenInteractor.swift in Sources */,
+				5785FB042BD4A922003C07C1 /* HomeViewController.swift in Sources */,
 				5785FADD2BD409F0003C07C1 /* UIInputIInformationView.swift in Sources */,
+				5785FAF82BD46FC8003C07C1 /* LauchScreenView.swift in Sources */,
 				5785FAE72BD42F9A003C07C1 /* CustomButton.swift in Sources */,
 				574A75612BCC5B3A0042E310 /* LaunchScreenViewController.swift in Sources */,
 				574A75672BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld in Sources */,
+				5785FAF42BD46F68003C07C1 /* PaxtuCoordinator.swift in Sources */,
 				574A755D2BCC5B3A0042E310 /* AppDelegate.swift in Sources */,
 				5785FAD62BCCAA17003C07C1 /* UIViewExtension.swift in Sources */,
+				5785FAFE2BD472EC003C07C1 /* LauchScreenPresenter.swift in Sources */,
 				5728BB8D2BCC76AA002BC212 /* LoginViewController.swift in Sources */,
 				5785FAEA2BD4623C003C07C1 /* LoginModel.swift in Sources */,
 				5785FAE52BD42EA2003C07C1 /* UIColor.swift in Sources */,
-				574A755F2BCC5B3A0042E310 /* SceneDelegate.swift in Sources */,
 				5785FAD82BCF3DD7003C07C1 /* UIImageExtension.swift in Sources */,
+				5785FB062BD4AA94003C07C1 /* HomeView.swift in Sources */,
 				5785FAE32BD42B4B003C07C1 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
