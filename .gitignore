@@ -1,9 +1,12 @@
 build/
 DerivedData/
+Pods/
 xcuserdata
+xcshareddata
 
 *.xccheckout
 *.xcbkptlist
 *.DS_Store
 */UserInterfaceState.xcuserstate
 *.xcscmblueprint
+*.pbxuser

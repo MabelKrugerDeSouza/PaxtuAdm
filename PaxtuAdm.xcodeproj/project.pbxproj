@@ -32,9 +32,12 @@
 		5785FB012BD473A1003C07C1 /* LauchScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FB002BD473A1003C07C1 /* LauchScreenInteractor.swift */; };
 		5785FB042BD4A922003C07C1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FB032BD4A921003C07C1 /* HomeViewController.swift */; };
 		5785FB062BD4AA94003C07C1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FB052BD4AA94003C07C1 /* HomeView.swift */; };
+		64D5EB0D26C7D81E887095D6 /* Pods_PaxtuAdm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD72E61637406B60C2B3D69 /* Pods_PaxtuAdm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25188D7D6CB3C13FE4A2426F /* Pods-PaxtuAdm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaxtuAdm.debug.xcconfig"; path = "Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm.debug.xcconfig"; sourceTree = "<group>"; };
+		2CD72E61637406B60C2B3D69 /* Pods_PaxtuAdm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaxtuAdm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5728BB8A2BCC685F002BC212 /* launch_screen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launch_screen.json; sourceTree = "<group>"; };
 		5728BB8C2BCC76AA002BC212 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		574A75592BCC5B3A0042E310 /* PaxtuAdm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaxtuAdm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +65,7 @@
 		5785FB002BD473A1003C07C1 /* LauchScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchScreenInteractor.swift; sourceTree = "<group>"; };
 		5785FB032BD4A921003C07C1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5785FB052BD4AA94003C07C1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		98122B183766DCBACBD3C262 /* Pods-PaxtuAdm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaxtuAdm.release.xcconfig"; path = "Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +73,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64D5EB0D26C7D81E887095D6 /* Pods_PaxtuAdm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		071EEA1AD550F7488E129E09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CD72E61637406B60C2B3D69 /* Pods_PaxtuAdm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5728BB892BCC6850002BC212 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +102,7 @@
 				574A755B2BCC5B3A0042E310 /* PaxtuAdm */,
 				574A755A2BCC5B3A0042E310 /* Products */,
 				81935EF5DC94D8E3C646AC66 /* Pods */,
+				071EEA1AD550F7488E129E09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -280,6 +294,8 @@
 		81935EF5DC94D8E3C646AC66 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				25188D7D6CB3C13FE4A2426F /* Pods-PaxtuAdm.debug.xcconfig */,
+				98122B183766DCBACBD3C262 /* Pods-PaxtuAdm.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -291,9 +307,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 574A75702BCC5B3B0042E310 /* Build configuration list for PBXNativeTarget "PaxtuAdm" */;
 			buildPhases = (
+				AC960F8041B70A2F7CE38A13 /* [CP] Check Pods Manifest.lock */,
 				574A75552BCC5B3A0042E310 /* Sources */,
 				574A75562BCC5B3A0042E310 /* Frameworks */,
 				574A75572BCC5B3A0042E310 /* Resources */,
+				4FF8A0DE60AD4A46E1E0D993 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -348,6 +366,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FF8A0DE60AD4A46E1E0D993 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC960F8041B70A2F7CE38A13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaxtuAdm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		574A75552BCC5B3A0042E310 /* Sources */ = {
@@ -504,6 +564,7 @@
 		};
 		574A75712BCC5B3B0042E310 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25188D7D6CB3C13FE4A2426F /* Pods-PaxtuAdm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -532,6 +593,7 @@
 		};
 		574A75722BCC5B3B0042E310 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98122B183766DCBACBD3C262 /* Pods-PaxtuAdm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
