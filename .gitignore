@@ -1,8 +1,9 @@
 build/
 DerivedData/
+xcuserdata
 
 *.xccheckout
-*.xcuserstate
 *.xcbkptlist
 *.DS_Store
 */UserInterfaceState.xcuserstate
+*.xcscmblueprint
