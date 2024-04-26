@@ -1,7 +1,8 @@
 build/
 DerivedData/
-project.xcworkspace/
 
 *.xccheckout
 *.xcuserstate
 *.xcbkptlist
+*.DS_Store
+*/UserInterfaceState.xcuserstate
