@@ -10,6 +10,8 @@ import UIKit
 extension UIImage {
     static let backgroundImage: UIImage = UIImage(named: "background-login").safeImage
     static let titleImage: UIImage = UIImage(named: "logo-paxtu").safeImage
+    static let iconProfileHeader: UIImage = UIImage(named: "iconProfile").safeImage
+    static let informationCarousel: UIImage = UIImage(named: "information").safeImage
 }
 
 extension Optional where Wrapped == UIImage {

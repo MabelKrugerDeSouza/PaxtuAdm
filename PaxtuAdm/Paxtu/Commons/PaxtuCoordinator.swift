@@ -22,10 +22,7 @@ final class PaxtuCoordinator: PaxtuCoordinatorProtocol {
     }
     
     func start() {
-        let presenter = LauchScreenPresenter()
-        let interactor = LauchScreenInteractor(presenter: presenter, coordinator: self)
-        let controller = LaunchScreenViewController(interactor: interactor)
-        presenter.view = controller
+        let controller = LaunchScreenViewController(coordinator: self)
         
         navigationController?.setViewControllers([controller], animated: true)
     }

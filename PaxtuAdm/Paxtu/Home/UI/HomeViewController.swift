@@ -8,9 +8,29 @@
 import UIKit
 
 final class HomeViewController: UIViewController {
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private var theView: HomeView {
+        return super.view as! HomeView
+    }
+    
+    override func loadView() {
+        super.loadView()
+        let theView = HomeView()
+        
+        self.view = theView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
-        navigationController?.isNavigationBarHidden = true
+        self.navigationController?.isNavigationBarHidden = true
     }
 }

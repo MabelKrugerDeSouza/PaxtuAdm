@@ -11,5 +11,4 @@ struct InputInformationModel {
     let title: String
     let backgroundColor: UIColor
     let typeKeyboard: UIKeyboardType
-    
 }
