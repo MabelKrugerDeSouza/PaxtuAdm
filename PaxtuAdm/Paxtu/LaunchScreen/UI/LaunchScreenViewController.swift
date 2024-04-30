@@ -8,16 +8,12 @@
 import UIKit
 import Lottie
 
-protocol LaunchScreenViewControllerProtocol: AnyObject {
-    func showView(with model: AnimationModel)
-}
-
 final class LaunchScreenViewController: UIViewController {
     
-    private let interactor: LauchScreenInteractorProtocol
+    private let coordinator: PaxtuCoordinatorProtocol
     
-    init(interactor: LauchScreenInteractorProtocol) {
-        self.interactor = interactor
+    init(coordinator: PaxtuCoordinatorProtocol) {
+        self.coordinator = coordinator
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -35,20 +31,9 @@ final class LaunchScreenViewController: UIViewController {
         let theView = LauchScreenView()
         
         theView.animationComplete = {[weak self] in
-            self?.interactor.animationComplete()
+            self?.coordinator.goToLogin()
         }
-        
-        self.view = theView
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        interactor.loadView()
-    }
-}
 
-extension LaunchScreenViewController: LaunchScreenViewControllerProtocol {
-    func showView(with model: AnimationModel) {
-        theView.setupData(with: model)
+        self.view = theView
     }
 }

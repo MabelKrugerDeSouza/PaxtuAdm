@@ -9,16 +9,15 @@ import UIKit
 import Lottie
 
 final class LauchScreenView: UIView {
-    lazy var animationView: LottieAnimationView = {
-        let view = LottieAnimationView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
+    private let animationView: LottieAnimationView
     
     var animationComplete: (() -> Void)?
     
     init() {
+        animationView = LottieAnimationView()
+
         super.init(frame: .zero)
+        
         setupConstraint()
         setupAnimation()
     }
@@ -36,24 +35,18 @@ final class LauchScreenView: UIView {
         NSLayoutConstraint.activate([
             animationView.centerYAnchor.constraint(equalTo: centerYAnchor),
             animationView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            animationView.widthAnchor.constraint(equalToConstant: 300),
-            animationView.heightAnchor.constraint(equalTo: animationView.widthAnchor, multiplier: 24/14),
+            animationView.widthAnchor.constraint(equalToConstant: 233),
+            animationView.heightAnchor.constraint(equalToConstant: 320),
         ])
     }
     
     private func setupAnimation() {
         backgroundColor = .white
-    }
-    
-    func setupData(with model: AnimationModel) {
-        animationView.animation = model.animation
-        animationView.isHidden = false
-        animationView.loopMode = model.loopModel
         
-        if model.loopModel == .playOnce {
-            animationView.play {[weak self] _ in
-                self?.animationComplete?()
-            }
+        animationView.animation = LottieAnimation.named("launch_screen")
+        
+        animationView.play {[weak self] _ in
+            self?.animationComplete?()
         }
     }
 }
