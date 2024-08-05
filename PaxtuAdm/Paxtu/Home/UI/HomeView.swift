@@ -10,12 +10,16 @@ import UIKit
 final class HomeView: UIView {
     private let headerView: HeaderHomeView
     private let carouselInformation: UIImageView
-    private let tabs: TabView
-    
+    private let tabsSegment: CustomSegmentedControlView
+    private let cardContentStack: UIStackView
+    private let cardView: CardTabView
+        
     init() {
         headerView = HeaderHomeView()
         carouselInformation = UIImageView()
-        tabs = TabView(tab: .main)
+        cardContentStack = UIStackView()
+        tabsSegment = CustomSegmentedControlView()
+        cardView = CardTabView()
         
         super.init(frame: .zero)
         
@@ -29,7 +33,7 @@ final class HomeView: UIView {
     }
     
     private func setupConstraint() {
-        addSubviews(headerView, carouselInformation, tabs)
+        addSubviews(headerView, carouselInformation, tabsSegment, cardContentStack)
         
         subviews.forEach({$0.translatesAutoresizingMaskIntoConstraints = false})
         
@@ -44,10 +48,15 @@ final class HomeView: UIView {
             carouselInformation.heightAnchor.constraint(equalToConstant: 99),
             carouselInformation.widthAnchor.constraint(equalToConstant: 366),
             
-            tabs.topAnchor.constraint(equalTo: carouselInformation.bottomAnchor, constant: 24),
-            tabs.leftAnchor.constraint(equalTo: leftAnchor, constant: 24),
-            tabs.rightAnchor.constraint(equalTo: rightAnchor, constant: -24),
-            tabs.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -300),
+            tabsSegment.topAnchor.constraint(equalTo: carouselInformation.bottomAnchor, constant: 24),
+            tabsSegment.leftAnchor.constraint(equalTo: leftAnchor, constant: 24),
+            tabsSegment.rightAnchor.constraint(equalTo: rightAnchor, constant: -24),
+           
+            cardContentStack.topAnchor.constraint(equalTo: tabsSegment.bottomAnchor, constant: 32),
+            cardContentStack.leftAnchor.constraint(equalTo: tabsSegment.leftAnchor),
+            cardContentStack.rightAnchor.constraint(equalTo: tabsSegment.rightAnchor),
+            cardContentStack.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -200),
+            cardView.heightAnchor.constraint(equalToConstant: 30),
         ])
     }
     
@@ -60,5 +69,17 @@ final class HomeView: UIView {
         carouselInformation.contentMode = .scaleAspectFill
         carouselInformation.layer.cornerRadius = 20
         carouselInformation.clipsToBounds = true
+    
+        setupConstraint()
+    }
+    
+    private func setupContentStack() {
+        cardContentStack.axis = .vertical
+        cardContentStack.distribution = .fillProportionally
+        cardContentStack.translatesAutoresizingMaskIntoConstraints = false
+        
+        cardContentStack.addArrangedSubview(cardView)
+        cardContentStack.setCustomSpacing(10, after: cardView)
+        cardContentStack.addArrangedSubview(cardView)
     }
 }

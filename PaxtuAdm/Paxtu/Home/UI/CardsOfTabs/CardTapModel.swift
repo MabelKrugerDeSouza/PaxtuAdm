@@ -11,5 +11,4 @@ import Foundation
 struct CardTabModel {
     let titleOfCard: String
     let typeOfCard: TypeOfCard
-    let tab: Tabs
 }

@@ -17,18 +17,15 @@ enum TypeOfCard {
     case schoolCamp
 }
 
-final class CardTabViewCell: UICollectionViewCell {
-    static let identifier = "CardTabViewCell"
-    
-    private let card: UIControl
+final class CardTabView: UIButton {
+    private let card: UIButton
     private let titleOfCardLabel: UILabel
     
-    var typeOfTab: Tabs = .main
     var type: TypeOfCard = .newActivity
     var onCardAction: ((TypeOfCard) -> Void)?
     
     init() {
-        card = UIControl()
+        card = UIButton()
         titleOfCardLabel = UILabel()
         super.init(frame: .zero)
         
@@ -53,6 +50,7 @@ final class CardTabViewCell: UICollectionViewCell {
             card.leftAnchor.constraint(equalTo: leftAnchor),
             card.rightAnchor.constraint(equalTo: rightAnchor),
             card.bottomAnchor.constraint(equalTo: bottomAnchor),
+            card.heightAnchor.constraint(equalToConstant: 83),
             
             titleOfCardLabel.leftAnchor.constraint(equalTo: card.leftAnchor, constant: 24),
             titleOfCardLabel.rightAnchor.constraint(equalTo: card.rightAnchor, constant: -24),
@@ -64,7 +62,7 @@ final class CardTabViewCell: UICollectionViewCell {
         card.backgroundColor = .lightGray
         card.layer.cornerRadius = 15
         card.layer.borderColor = UIColor.black.cgColor
-        card.layer.borderWidth = 2
+        card.layer.borderWidth = 1
         
         titleOfCardLabel.font = .HelveticaNeueRegularTwelve
         titleOfCardLabel.textColor = .black
@@ -77,7 +75,6 @@ final class CardTabViewCell: UICollectionViewCell {
     func setupData(with model: CardTabModel) {
         titleOfCardLabel.text = model.titleOfCard
         type = model.typeOfCard
-        typeOfTab = model.tab
     }
     
     @objc
