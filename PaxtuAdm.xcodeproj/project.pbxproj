@@ -13,7 +13,9 @@
 		574A75612BCC5B3A0042E310 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574A75602BCC5B3A0042E310 /* LaunchScreenViewController.swift */; };
 		574A75672BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 574A75652BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld */; };
 		574A75692BCC5B3B0042E310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574A75682BCC5B3B0042E310 /* Assets.xcassets */; };
-		5772692C2C614A1F002A4638 /* classTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772692B2C614A1E002A4638 /* classTest.swift */; };
+		5772692C2C614A1F002A4638 /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772692B2C614A1E002A4638 /* SegmentView.swift */; };
+		5772692F2C615C9D002A4638 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772692E2C615C9D002A4638 /* HomePresenter.swift */; };
+		577269322C615E3D002A4638 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577269312C615E3D002A4638 /* HomeInteractor.swift */; };
 		5785FAD32BCCA223003C07C1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAD22BCCA223003C07C1 /* LoginView.swift */; };
 		5785FAD62BCCAA17003C07C1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAD52BCCAA17003C07C1 /* UIViewExtension.swift */; };
 		5785FAD82BCF3DD7003C07C1 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAD72BCF3DD7003C07C1 /* UIImageExtension.swift */; };
@@ -44,7 +46,9 @@
 		574A75662BCC5B3A0042E310 /* PaxtuAdm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PaxtuAdm.xcdatamodel; sourceTree = "<group>"; };
 		574A75682BCC5B3B0042E310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		574A756D2BCC5B3B0042E310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5772692B2C614A1E002A4638 /* classTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classTest.swift; sourceTree = "<group>"; };
+		5772692B2C614A1E002A4638 /* SegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
+		5772692E2C615C9D002A4638 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		577269312C615E3D002A4638 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		5785FAD22BCCA223003C07C1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5785FAD52BCCAA17003C07C1 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5785FAD72BCF3DD7003C07C1 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
@@ -127,6 +131,22 @@
 				574A75652BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld */,
 			);
 			path = PaxtuAdm;
+			sourceTree = "<group>";
+		};
+		5772692D2C615C90002A4638 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5772692E2C615C9D002A4638 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		577269302C615E29002A4638 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				577269312C615E3D002A4638 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		5785FACF2BCCA1BF003C07C1 /* LaunchScreen */ = {
@@ -240,8 +260,10 @@
 		5785FAF52BD46F7F003C07C1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				577269302C615E29002A4638 /* Interactor */,
+				5772692D2C615C90002A4638 /* Presenter */,
 				5785FB022BD4A91A003C07C1 /* UI */,
-				5772692B2C614A1E002A4638 /* classTest.swift */,
+				5772692B2C614A1E002A4638 /* SegmentView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -414,13 +436,15 @@
 				5785FAE02BD40B4C003C07C1 /* InputInformationModel.swift in Sources */,
 				5785FB042BD4A922003C07C1 /* HomeViewController.swift in Sources */,
 				5785FB132BDED974003C07C1 /* CardTapModel.swift in Sources */,
+				577269322C615E3D002A4638 /* HomeInteractor.swift in Sources */,
 				5785FADD2BD409F0003C07C1 /* UIInputIInformationView.swift in Sources */,
 				5785FB112BDED564003C07C1 /* CardTabViewCell.swift in Sources */,
-				5772692C2C614A1F002A4638 /* classTest.swift in Sources */,
+				5772692C2C614A1F002A4638 /* SegmentView.swift in Sources */,
 				5785FAF82BD46FC8003C07C1 /* LauchScreenView.swift in Sources */,
 				5785FAE72BD42F9A003C07C1 /* CustomButton.swift in Sources */,
 				574A75612BCC5B3A0042E310 /* LaunchScreenViewController.swift in Sources */,
 				574A75672BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld in Sources */,
+				5772692F2C615C9D002A4638 /* HomePresenter.swift in Sources */,
 				5785FAF42BD46F68003C07C1 /* PaxtuCoordinator.swift in Sources */,
 				574A755D2BCC5B3A0042E310 /* AppDelegate.swift in Sources */,
 				5785FAD62BCCAA17003C07C1 /* UIViewExtension.swift in Sources */,

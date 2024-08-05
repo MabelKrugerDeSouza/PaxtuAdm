@@ -33,7 +33,12 @@ final class HomeView: UIView {
     }
     
     private func setupConstraint() {
-        addSubviews(headerView, carouselInformation, tabsSegment, cardContentStack)
+        addSubviews(
+            headerView,
+            carouselInformation,
+            tabsSegment,
+            cardContentStack
+        )
         
         subviews.forEach({$0.translatesAutoresizingMaskIntoConstraints = false})
         
@@ -63,9 +68,6 @@ final class HomeView: UIView {
     private func renderView() {
         backgroundColor = .white
         
-        headerView.setupData(name: "Olá Mabel")
-        
-        carouselInformation.image = UIImage.information
         carouselInformation.contentMode = .scaleAspectFill
         carouselInformation.layer.cornerRadius = 20
         carouselInformation.clipsToBounds = true
@@ -82,4 +84,16 @@ final class HomeView: UIView {
         cardContentStack.setCustomSpacing(10, after: cardView)
         cardContentStack.addArrangedSubview(cardView)
     }
+    
+    func setupData(with model: HomeViewModel) {
+        headerView.setupData(name: model.nameOfUser)
+        tabsSegment.setupData(with: model.itensOfSegment)
+        carouselInformation.image = model.imagem
+    }
+}
+
+struct HomeViewModel {
+    let itensOfSegment: SegmentViewModel
+    let nameOfUser: String
+    let imagem: UIImage
 }

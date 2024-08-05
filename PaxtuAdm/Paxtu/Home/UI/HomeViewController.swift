@@ -7,9 +7,16 @@
 
 import UIKit
 
+protocol HomeViewControllerProtocol: AnyObject {
+    func showView(with model: HomeViewModel)
+}
+
 final class HomeViewController: UIViewController {
     
-    init() {
+    private let interactor: HomeInteractorProtocol
+    
+    init(interactor: HomeInteractorProtocol) {
+        self.interactor = interactor
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -32,5 +39,13 @@ final class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
+        
+        interactor.loadView()
+    }
+}
+
+extension HomeViewController: HomeViewControllerProtocol {
+    func showView(with model: HomeViewModel) {
+        theView.setupData(with: model)
     }
 }

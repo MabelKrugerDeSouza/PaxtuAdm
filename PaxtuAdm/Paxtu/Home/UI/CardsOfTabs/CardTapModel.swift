@@ -11,4 +11,10 @@ import Foundation
 struct CardTabModel {
     let titleOfCard: String
     let typeOfCard: TypeOfCard
+    let itemOfSegment: TypeOfSegment
+}
+
+enum TypeOfSegment {
+    case main
+    case other
 }

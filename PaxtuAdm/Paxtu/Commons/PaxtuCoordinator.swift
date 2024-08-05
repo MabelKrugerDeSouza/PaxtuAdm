@@ -37,8 +37,11 @@ final class PaxtuCoordinator: PaxtuCoordinatorProtocol {
     }
     
     func goToHome() {
-        let controller = HomeViewController()
+        let presenter = HomePresenter()
+        let interactor = HomeInteractor(presenter: presenter)
+        let controller = HomeViewController(interactor: interactor)
         
+        presenter.view = controller
         self.navigationController?.pushViewController(controller, animated: true)
     }
 }
