@@ -8,9 +8,10 @@
 import UIKit
 
 extension UIFont {
+    static let HelveticaNeueBoldThirtySix = UIFont(name: "HelveticaNeue-Bold", size: 36.0)
     static let HelveticaNeueBoldTwentyEight = UIFont(name:"HelveticaNeue-Bold", size: 28.0)
     static let HelveticaNeueBoldSixteen = UIFont(name: "HelveticaNeue-Bold", size: 16.0)
     static let HelveticaNeueSemiBoldSixteen = UIFont(name: "HelveticaNeue-SemiBold", size: 16.0)
     static let HelveticaNeueRegularSixteen = UIFont(name: "HelveticaNeue-Regular", size: 16.0)
-    static let HelveticaNeueRegularTwelve = UIFont(name: "HelveticaNeue-Regular", size: 12.0)
+    static let HelveticaNeueRegularTwelve = UIFont(name: "HelveticaNeue", size: 12.0)
 }

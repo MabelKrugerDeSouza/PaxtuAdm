@@ -20,7 +20,19 @@ final class HomePresenter: HomePresenterProtocol {
             with: HomeViewModel(
             itensOfSegment: presentSegmentItems(),
             nameOfUser: "Olá, Mabel",
-            imagem: UIImage.informationCarousel
+            imagem: UIImage.iconProfileHeader, 
+            headerOfActivity: "Próximos Eventos", 
+            informationOfActivity:
+                CardEventViewModel(
+                    data: "26",
+                    nameOfEvent: "ACAMGELB - Aniversário 66 anos GELB",
+                    descriptionOfEvent: "Acampamento de grupo \nGELB"
+                ), 
+            carouselImages:
+                [
+                    UIImage.informationCarousel,
+                    UIImage.iconProfile
+                ]
             )
         )
     }

@@ -33,6 +33,10 @@ final class HomeViewController: UIViewController {
         super.loadView()
         let theView = HomeView()
         
+        theView.onButtonAction = {[weak self] type in
+            self?.interactor.goToScreen(of: type)
+        }
+        
         self.view = theView
     }
     

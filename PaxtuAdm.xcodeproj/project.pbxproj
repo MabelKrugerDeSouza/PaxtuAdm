@@ -16,6 +16,9 @@
 		5772692C2C614A1F002A4638 /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772692B2C614A1E002A4638 /* SegmentView.swift */; };
 		5772692F2C615C9D002A4638 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772692E2C615C9D002A4638 /* HomePresenter.swift */; };
 		577269322C615E3D002A4638 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577269312C615E3D002A4638 /* HomeInteractor.swift */; };
+		577269352C618526002A4638 /* CardEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577269342C618526002A4638 /* CardEventView.swift */; };
+		577269382C66B53B002A4638 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577269372C66B53B002A4638 /* CarouselView.swift */; };
+		577269452C66EC78002A4638 /* NewActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577269442C66EC78002A4638 /* NewActivityView.swift */; };
 		5785FAD32BCCA223003C07C1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAD22BCCA223003C07C1 /* LoginView.swift */; };
 		5785FAD62BCCAA17003C07C1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAD52BCCAA17003C07C1 /* UIViewExtension.swift */; };
 		5785FAD82BCF3DD7003C07C1 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAD72BCF3DD7003C07C1 /* UIImageExtension.swift */; };
@@ -49,6 +52,9 @@
 		5772692B2C614A1E002A4638 /* SegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
 		5772692E2C615C9D002A4638 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		577269312C615E3D002A4638 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		577269342C618526002A4638 /* CardEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEventView.swift; sourceTree = "<group>"; };
+		577269372C66B53B002A4638 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		577269442C66EC78002A4638 /* NewActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewActivityView.swift; sourceTree = "<group>"; };
 		5785FAD22BCCA223003C07C1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5785FAD52BCCAA17003C07C1 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5785FAD72BCF3DD7003C07C1 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
@@ -149,6 +155,72 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		577269332C618516002A4638 /* CardEvent */ = {
+			isa = PBXGroup;
+			children = (
+				577269342C618526002A4638 /* CardEventView.swift */,
+			);
+			path = CardEvent;
+			sourceTree = "<group>";
+		};
+		5772693D2C66EB83002A4638 /* Segment */ = {
+			isa = PBXGroup;
+			children = (
+				5772693E2C66EB8D002A4638 /* UI */,
+			);
+			path = Segment;
+			sourceTree = "<group>";
+		};
+		5772693E2C66EB8D002A4638 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5772692B2C614A1E002A4638 /* SegmentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5772693F2C66EBA2002A4638 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				577269302C615E29002A4638 /* Interactor */,
+				5772692D2C615C90002A4638 /* Presenter */,
+				5785FB022BD4A91A003C07C1 /* UI */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		577269402C66EBCF002A4638 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				577269412C66EBDC002A4638 /* UI */,
+			);
+			path = Carousel;
+			sourceTree = "<group>";
+		};
+		577269412C66EBDC002A4638 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				577269372C66B53B002A4638 /* CarouselView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		577269422C66EC64002A4638 /* NewActivity */ = {
+			isa = PBXGroup;
+			children = (
+				577269432C66EC6D002A4638 /* UI */,
+			);
+			path = NewActivity;
+			sourceTree = "<group>";
+		};
+		577269432C66EC6D002A4638 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				577269442C66EC78002A4638 /* NewActivityView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		5785FACF2BCCA1BF003C07C1 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +263,7 @@
 		5785FADB2BD409D4003C07C1 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				577269332C618516002A4638 /* CardEvent */,
 				5785FAE12BD42B15003C07C1 /* UIButton */,
 				5785FADE2BD40B28003C07C1 /* UITextField */,
 			);
@@ -241,6 +314,7 @@
 		5785FAEF2BD46B13003C07C1 /* Paxtu */ = {
 			isa = PBXGroup;
 			children = (
+				577269422C66EC64002A4638 /* NewActivity */,
 				5785FAF52BD46F7F003C07C1 /* Home */,
 				5785FAD02BCCA201003C07C1 /* Login */,
 				5785FACF2BCCA1BF003C07C1 /* LaunchScreen */,
@@ -260,10 +334,11 @@
 		5785FAF52BD46F7F003C07C1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				577269302C615E29002A4638 /* Interactor */,
-				5772692D2C615C90002A4638 /* Presenter */,
-				5785FB022BD4A91A003C07C1 /* UI */,
-				5772692B2C614A1E002A4638 /* SegmentView.swift */,
+				577269402C66EBCF002A4638 /* Carousel */,
+				5772693F2C66EBA2002A4638 /* HomeScreen */,
+				5772693D2C66EB83002A4638 /* Segment */,
+				5785FB072BDE9161003C07C1 /* Header */,
+				5785FB0E2BDED545003C07C1 /* CardsOfTabs */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -280,8 +355,6 @@
 		5785FB022BD4A91A003C07C1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				5785FB0E2BDED545003C07C1 /* CardsOfTabs */,
-				5785FB072BDE9161003C07C1 /* Header */,
 				5785FB032BD4A921003C07C1 /* HomeViewController.swift */,
 				5785FB052BD4AA94003C07C1 /* HomeView.swift */,
 			);
@@ -441,6 +514,8 @@
 				5785FB112BDED564003C07C1 /* CardTabViewCell.swift in Sources */,
 				5772692C2C614A1F002A4638 /* SegmentView.swift in Sources */,
 				5785FAF82BD46FC8003C07C1 /* LauchScreenView.swift in Sources */,
+				577269382C66B53B002A4638 /* CarouselView.swift in Sources */,
+				577269452C66EC78002A4638 /* NewActivityView.swift in Sources */,
 				5785FAE72BD42F9A003C07C1 /* CustomButton.swift in Sources */,
 				574A75612BCC5B3A0042E310 /* LaunchScreenViewController.swift in Sources */,
 				574A75672BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld in Sources */,
@@ -451,6 +526,7 @@
 				5728BB8D2BCC76AA002BC212 /* LoginViewController.swift in Sources */,
 				5785FAEA2BD4623C003C07C1 /* LoginModel.swift in Sources */,
 				5785FAE52BD42EA2003C07C1 /* UIColor.swift in Sources */,
+				577269352C618526002A4638 /* CardEventView.swift in Sources */,
 				5785FAD82BCF3DD7003C07C1 /* UIImageExtension.swift in Sources */,
 				5785FB062BD4AA94003C07C1 /* HomeView.swift in Sources */,
 			);

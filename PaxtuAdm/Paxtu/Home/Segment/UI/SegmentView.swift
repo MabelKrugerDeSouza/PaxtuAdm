@@ -8,14 +8,14 @@
 import UIKit
 
 class CustomSegmentedControlView: UIView {
-    private var buttonCount: Int
     private let buttonContainerView: UIView
     private let segmentedControl: UISegmentedControl
     
     private var modelItens: SegmentViewModel?
     
+    var onButtonAction: ((TypeOfCard) -> Void)?
+    
     init(){
-        buttonCount = Int()
         buttonContainerView = UIView()
         segmentedControl = UISegmentedControl(items: ["principais".uppercased(), "outros".uppercased()])
         
@@ -85,8 +85,6 @@ class CustomSegmentedControlView: UIView {
     }
     
     private func createButtonLayout(is2x2: Bool, with model: SegmentViewModel) -> [UIView] {
-        let buttonCount = is2x2 ? 4 : 3
-        
         if is2x2 {
             var buttonsMain: [UIView] = []
             model.itens.forEach { item in
@@ -95,6 +93,10 @@ class CustomSegmentedControlView: UIView {
                     button.setupData(with: item)
                     button.translatesAutoresizingMaskIntoConstraints = false
                     buttonsMain.append(button)
+                    
+                    button.onCardAction = {[weak self] type in
+                        self?.onButtonAction?(type)
+                    }
                 }
             }
             return createLayout(from: buttonsMain, is2x2: is2x2)
@@ -107,6 +109,10 @@ class CustomSegmentedControlView: UIView {
                     button.setupData(with: item)
                     button.translatesAutoresizingMaskIntoConstraints = false
                     buttons.append(button)
+                    
+                    button.onCardAction = {[weak self] type in
+                        self?.onButtonAction?(type)
+                    }
                 }
             }
             return createLayout(from: buttons, is2x2: is2x2)
@@ -134,7 +140,6 @@ class CustomSegmentedControlView: UIView {
     
     @objc
     private func segmentedControlValueChanged() {
-        guard let modelItens else {return}
         updateButtonLayout(for: segmentedControl.selectedSegmentIndex)
     }
 }
@@ -143,3 +148,5 @@ struct SegmentViewModel {
     let itens: [CardTabModel]
     
 }
+
+

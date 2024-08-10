@@ -80,5 +80,6 @@ final class CardTabView: UIButton {
     @objc
     private func didTapCard() {
         onCardAction?(type)
+        print("was clicked")
     }
 }
