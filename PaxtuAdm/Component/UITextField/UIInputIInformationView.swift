@@ -11,10 +11,12 @@ final class UIInputIInformationView: UIView {
     
     private let titleTextField: UILabel
     private let inputTextField: UITextField
+    private let isBoldTheTitle: Bool
     
-    init() {
+    init(isBold: Bool) {
         titleTextField = UILabel()
         inputTextField = UITextField()
+        isBoldTheTitle = isBold
         
         super.init(frame: .zero)
         
@@ -45,7 +47,7 @@ final class UIInputIInformationView: UIView {
     }
     
     private func renderView() {
-        titleTextField.font = .HelveticaNeueBoldSixteen
+        titleTextField.font = isBoldTheTitle ? .HelveticaNeueBoldSixteen : .HelveticaNeueRegularSixteen
         titleTextField.textColor = .black
         titleTextField.numberOfLines = 0
       
@@ -53,7 +55,7 @@ final class UIInputIInformationView: UIView {
         inputTextField.autocorrectionType = .no
         inputTextField.clearButtonMode = .whileEditing;
         inputTextField.layer.cornerRadius = 10
-        inputTextField.layer.borderWidth = 2
+        inputTextField.layer.borderWidth = 1
         inputTextField.layer.borderColor = UIColor.black.cgColor
     }
     

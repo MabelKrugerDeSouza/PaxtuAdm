@@ -12,6 +12,7 @@ extension UIImage {
     static let titleImage: UIImage = UIImage(named: "logo-paxtu").safeImage
     static let iconProfileHeader: UIImage = UIImage(named: "iconProfile").safeImage
     static let informationCarousel: UIImage = UIImage(named: "information").safeImage
+    static let backIconNavigation: UIImage = UIImage(named: "backIcon").safeImage
 }
 
 extension Optional where Wrapped == UIImage {

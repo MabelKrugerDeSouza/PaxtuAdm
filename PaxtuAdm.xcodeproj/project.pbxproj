@@ -19,6 +19,10 @@
 		577269352C618526002A4638 /* CardEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577269342C618526002A4638 /* CardEventView.swift */; };
 		577269382C66B53B002A4638 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577269372C66B53B002A4638 /* CarouselView.swift */; };
 		577269452C66EC78002A4638 /* NewActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577269442C66EC78002A4638 /* NewActivityView.swift */; };
+		577269482C66EE07002A4638 /* PaxtuNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577269472C66EE07002A4638 /* PaxtuNavigation.swift */; };
+		5772694A2C67C03F002A4638 /* NewActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577269492C67C03F002A4638 /* NewActivityViewController.swift */; };
+		5772694E2C67C19A002A4638 /* NewActivityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772694D2C67C19A002A4638 /* NewActivityPresenter.swift */; };
+		577269502C67C524002A4638 /* NewActivityInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772694F2C67C524002A4638 /* NewActivityInteractor.swift */; };
 		5785FAD32BCCA223003C07C1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAD22BCCA223003C07C1 /* LoginView.swift */; };
 		5785FAD62BCCAA17003C07C1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAD52BCCAA17003C07C1 /* UIViewExtension.swift */; };
 		5785FAD82BCF3DD7003C07C1 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAD72BCF3DD7003C07C1 /* UIImageExtension.swift */; };
@@ -55,6 +59,10 @@
 		577269342C618526002A4638 /* CardEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEventView.swift; sourceTree = "<group>"; };
 		577269372C66B53B002A4638 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		577269442C66EC78002A4638 /* NewActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewActivityView.swift; sourceTree = "<group>"; };
+		577269472C66EE07002A4638 /* PaxtuNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaxtuNavigation.swift; sourceTree = "<group>"; };
+		577269492C67C03F002A4638 /* NewActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewActivityViewController.swift; sourceTree = "<group>"; };
+		5772694D2C67C19A002A4638 /* NewActivityPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewActivityPresenter.swift; sourceTree = "<group>"; };
+		5772694F2C67C524002A4638 /* NewActivityInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewActivityInteractor.swift; sourceTree = "<group>"; };
 		5785FAD22BCCA223003C07C1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5785FAD52BCCAA17003C07C1 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5785FAD72BCF3DD7003C07C1 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
@@ -208,6 +216,8 @@
 		577269422C66EC64002A4638 /* NewActivity */ = {
 			isa = PBXGroup;
 			children = (
+				5772694C2C67C187002A4638 /* Interactor */,
+				5772694B2C67C182002A4638 /* Presenter */,
 				577269432C66EC6D002A4638 /* UI */,
 			);
 			path = NewActivity;
@@ -217,8 +227,33 @@
 			isa = PBXGroup;
 			children = (
 				577269442C66EC78002A4638 /* NewActivityView.swift */,
+				577269492C67C03F002A4638 /* NewActivityViewController.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		577269462C66EDF6002A4638 /* PaxtuNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				577269472C66EE07002A4638 /* PaxtuNavigation.swift */,
+			);
+			path = PaxtuNavigation;
+			sourceTree = "<group>";
+		};
+		5772694B2C67C182002A4638 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5772694D2C67C19A002A4638 /* NewActivityPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5772694C2C67C187002A4638 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5772694F2C67C524002A4638 /* NewActivityInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		5785FACF2BCCA1BF003C07C1 /* LaunchScreen */ = {
@@ -263,6 +298,7 @@
 		5785FADB2BD409D4003C07C1 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				577269462C66EDF6002A4638 /* PaxtuNavigation */,
 				577269332C618516002A4638 /* CardEvent */,
 				5785FAE12BD42B15003C07C1 /* UIButton */,
 				5785FADE2BD40B28003C07C1 /* UITextField */,
@@ -501,12 +537,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5772694E2C67C19A002A4638 /* NewActivityPresenter.swift in Sources */,
 				5785FAF12BD46B2E003C07C1 /* LoginInteractor.swift in Sources */,
 				5785FAED2BD46371003C07C1 /* LoginPresenter.swift in Sources */,
 				5785FAD32BCCA223003C07C1 /* LoginView.swift in Sources */,
 				5785FADA2BCF52F7003C07C1 /* UIFontExtension.swift in Sources */,
 				5785FB092BDE9170003C07C1 /* HeaderHomeView.swift in Sources */,
 				5785FAE02BD40B4C003C07C1 /* InputInformationModel.swift in Sources */,
+				577269482C66EE07002A4638 /* PaxtuNavigation.swift in Sources */,
+				577269502C67C524002A4638 /* NewActivityInteractor.swift in Sources */,
 				5785FB042BD4A922003C07C1 /* HomeViewController.swift in Sources */,
 				5785FB132BDED974003C07C1 /* CardTapModel.swift in Sources */,
 				577269322C615E3D002A4638 /* HomeInteractor.swift in Sources */,
@@ -514,6 +553,7 @@
 				5785FB112BDED564003C07C1 /* CardTabViewCell.swift in Sources */,
 				5772692C2C614A1F002A4638 /* SegmentView.swift in Sources */,
 				5785FAF82BD46FC8003C07C1 /* LauchScreenView.swift in Sources */,
+				5772694A2C67C03F002A4638 /* NewActivityViewController.swift in Sources */,
 				577269382C66B53B002A4638 /* CarouselView.swift in Sources */,
 				577269452C66EC78002A4638 /* NewActivityView.swift in Sources */,
 				5785FAE72BD42F9A003C07C1 /* CustomButton.swift in Sources */,

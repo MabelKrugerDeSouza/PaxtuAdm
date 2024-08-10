@@ -18,6 +18,7 @@ protocol PaxtuCoordinatorProtocol {
     func goToActivities()
     func goToLibrary()
     func goToSchoolCamp()
+    func dismissScreen()
 }
 
 final class PaxtuCoordinator: PaxtuCoordinatorProtocol {
@@ -40,7 +41,7 @@ final class PaxtuCoordinator: PaxtuCoordinatorProtocol {
         let controller = LoginViewController(interactor: interactor)
         presenter.view = controller
         
-        self.navigationController?.setViewControllers([controller], animated: true)
+        navigationController?.setViewControllers([controller], animated: true)
     }
     
     func goToHome() {
@@ -49,11 +50,17 @@ final class PaxtuCoordinator: PaxtuCoordinatorProtocol {
         let controller = HomeViewController(interactor: interactor)
         
         presenter.view = controller
-        self.navigationController?.pushViewController(controller, animated: true)
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     func goToNewActivity() {
-        print("foi")
+        let presenter = NewActivityPresenter()
+        let interactor = NewActivityInteractor(presenter: presenter, coordinator: self)
+        let controller = NewActivityViewController(interactor: interactor)
+        presenter.view = controller
+       
+        navigationController?.pushViewController(controller, animated: true)
+        
     }
     
     func goToEvents() {
@@ -78,5 +85,9 @@ final class PaxtuCoordinator: PaxtuCoordinatorProtocol {
     
     func goToSchoolCamp() {
         print("foi")
+    }
+    
+    func dismissScreen() {
+        navigationController?.popViewController(animated: true)
     }
 }
