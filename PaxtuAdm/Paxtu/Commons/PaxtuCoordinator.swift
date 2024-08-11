@@ -60,11 +60,15 @@ final class PaxtuCoordinator: PaxtuCoordinatorProtocol {
         presenter.view = controller
        
         navigationController?.pushViewController(controller, animated: true)
-        
     }
     
     func goToEvents() {
-        print("foi")
+        let presenter = EventsPresenter()
+        let interactor = EventsInteractor(presenter: presenter, coordinator: self)
+        let controller = EventsViewController(interactor: interactor)
+        presenter.view = controller
+        
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     func goToSession() {
