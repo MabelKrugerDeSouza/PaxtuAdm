@@ -27,6 +27,8 @@
 		577269562C683B2E002A4638 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577269552C683B2E002A4638 /* EventsViewController.swift */; };
 		577269592C683C00002A4638 /* EventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577269582C683C00002A4638 /* EventsPresenter.swift */; };
 		5772695C2C683E6C002A4638 /* EventsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772695B2C683E6C002A4638 /* EventsInteractor.swift */; };
+		577269612C6A7991002A4638 /* CardOfLiderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577269602C6A7991002A4638 /* CardOfLiderView.swift */; };
+		577269632C6BCF16002A4638 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577269622C6BCF16002A4638 /* SessionView.swift */; };
 		5785FAD32BCCA223003C07C1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAD22BCCA223003C07C1 /* LoginView.swift */; };
 		5785FAD62BCCAA17003C07C1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAD52BCCAA17003C07C1 /* UIViewExtension.swift */; };
 		5785FAD82BCF3DD7003C07C1 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAD72BCF3DD7003C07C1 /* UIImageExtension.swift */; };
@@ -71,6 +73,8 @@
 		577269552C683B2E002A4638 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		577269582C683C00002A4638 /* EventsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsPresenter.swift; sourceTree = "<group>"; };
 		5772695B2C683E6C002A4638 /* EventsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsInteractor.swift; sourceTree = "<group>"; };
+		577269602C6A7991002A4638 /* CardOfLiderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardOfLiderView.swift; sourceTree = "<group>"; };
+		577269622C6BCF16002A4638 /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
 		5785FAD22BCCA223003C07C1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5785FAD52BCCAA17003C07C1 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5785FAD72BCF3DD7003C07C1 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
@@ -299,6 +303,31 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		5772695D2C6A786A002A4638 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				5772695F2C6A7969002A4638 /* CardOfLider */,
+				5772695E2C6A78B2002A4638 /* UI */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		5772695E2C6A78B2002A4638 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				577269622C6BCF16002A4638 /* SessionView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5772695F2C6A7969002A4638 /* CardOfLider */ = {
+			isa = PBXGroup;
+			children = (
+				577269602C6A7991002A4638 /* CardOfLiderView.swift */,
+			);
+			path = CardOfLider;
+			sourceTree = "<group>";
+		};
 		5785FACF2BCCA1BF003C07C1 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +422,7 @@
 		5785FAEF2BD46B13003C07C1 /* Paxtu */ = {
 			isa = PBXGroup;
 			children = (
+				5772695D2C6A786A002A4638 /* Session */,
 				577269512C67CB56002A4638 /* Events */,
 				577269422C66EC64002A4638 /* NewActivity */,
 				5785FAF52BD46F7F003C07C1 /* Home */,
@@ -614,7 +644,9 @@
 				5728BB8D2BCC76AA002BC212 /* LoginViewController.swift in Sources */,
 				5785FAEA2BD4623C003C07C1 /* LoginModel.swift in Sources */,
 				5785FAE52BD42EA2003C07C1 /* UIColor.swift in Sources */,
+				577269612C6A7991002A4638 /* CardOfLiderView.swift in Sources */,
 				577269352C618526002A4638 /* CardEventView.swift in Sources */,
+				577269632C6BCF16002A4638 /* SessionView.swift in Sources */,
 				5785FAD82BCF3DD7003C07C1 /* UIImageExtension.swift in Sources */,
 				5785FB062BD4AA94003C07C1 /* HomeView.swift in Sources */,
 			);

@@ -20,6 +20,7 @@ extension UIFont {
     
     //MARK: = Regular
     static let HelveticaNeueRegularSixteen = UIFont(name: "HelveticaNeue-Regular", size: 16.0)
+    static let HelveticaNeueRegularFourteen = UIFont(name: "HelveticaNeue-Regular", size: 14.0)
     static let HelveticaNeueRegularTwelve = UIFont(name: "HelveticaNeue", size: 12.0)
     static let HelveticaNeueBoldTwelve = UIFont(name: "HelveticaNeue-Bold", size: 12.0)
 }
