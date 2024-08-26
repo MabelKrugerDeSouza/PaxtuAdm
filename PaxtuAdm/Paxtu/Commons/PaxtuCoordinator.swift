@@ -72,7 +72,12 @@ final class PaxtuCoordinator: PaxtuCoordinatorProtocol {
     }
     
     func goToSession() {
-        print("foi")
+        let presenter = SessionPresenter()
+        let interactor = SessionInteractor(presenter: presenter, coordinator: self)
+        let controller = SessionViewController(interactor: interactor)
+        presenter.view = controller
+        
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     func goToAssociates() {

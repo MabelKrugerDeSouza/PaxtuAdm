@@ -49,7 +49,7 @@ final class CardOfLiderView: UIView {
     private func renderView() {
         backgroundColor = .clear
         
-        icon.layer.cornerRadius = 31
+        icon.layer.cornerRadius = 53
         icon.clipsToBounds = true
         icon.backgroundColor = .white
         

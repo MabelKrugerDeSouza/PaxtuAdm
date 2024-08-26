@@ -45,13 +45,13 @@ final class PaxtuNavigation: UIView {
             backButton.widthAnchor.constraint(equalToConstant: 32),
             
             titleHeader.topAnchor.constraint(equalTo: backButton.topAnchor),
-            titleHeader.rightAnchor.constraint(equalTo: rightAnchor, constant: -16),
+            titleHeader.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 8),
             titleHeader.bottomAnchor.constraint(equalTo: backButton.bottomAnchor)
         ])
     }
     
     private func renderView() {
-        backgroundColor = .white
+        backgroundColor = .clear
         
         titleHeader.font = .HelveticaNeueBoldTwelve
         titleHeader.textAlignment = .center
