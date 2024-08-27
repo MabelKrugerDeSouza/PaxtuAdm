@@ -20,6 +20,7 @@ final class SessionView: UIView {
     private let contentStackView: UIStackView
     
     var onBackButtonAction: (() -> Void)?
+    var onActionOfCardAssociate: ((String) -> Void)?
     
     init() {
         navigation = PaxtuNavigation()
@@ -159,16 +160,15 @@ final class SessionView: UIView {
     
     private func setupContentStackView(listOfAssociates: [String]) {
         contentStackView.axis = .vertical
-        contentStackView.spacing = 10
         contentStackView.translatesAutoresizingMaskIntoConstraints = false
         contentStackView.subviews.forEach { $0.removeFromSuperview() }
         
         listOfAssociates.forEach { name in
-            let itemView = UILabel()
-            itemView.text = name
-            itemView.font = .HelveticaNeueBoldTwelve
-            itemView.textAlignment = .left
-            itemView.numberOfLines = 0
+            let itemView = AssociatesView()
+            itemView.setupData(with: name)
+            itemView.onActionCard = {[weak self] name in
+                self?.onActionOfCardAssociate?(name)
+            }
             contentStackView.addArrangedSubview(itemView)
             contentStackView.setCustomSpacing(8, after: itemView)
         }

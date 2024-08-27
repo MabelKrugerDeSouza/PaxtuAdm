@@ -36,6 +36,10 @@ final class SessionViewController: UIViewController {
             self.interactor.dismissFlow()
         }
         
+        theView.onActionOfCardAssociate = {[weak self] name in
+            print("o nome tocado foi \(name)")
+        }
+        
         self.view = theView
     }
     

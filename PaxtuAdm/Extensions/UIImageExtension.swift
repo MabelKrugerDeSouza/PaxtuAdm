@@ -16,6 +16,8 @@ extension UIImage {
     static let sessionRover: UIImage = UIImage(named: "cla-pioneiro").safeImage
     static let iconLiderOne: UIImage = UIImage(named: "iconLider1").safeImage
     static let iconLiderTwo: UIImage = UIImage(named: "iconLider2").safeImage
+    static let iconSetGo: UIImage = UIImage(named: "setGo").safeImage
+    static let iconPlus: UIImage = UIImage(named: "plus").safeImage
 }
 
 extension Optional where Wrapped == UIImage {

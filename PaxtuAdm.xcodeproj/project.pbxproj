@@ -16,6 +16,7 @@
 		575F000C2C7BFDB10032B3C4 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F000B2C7BFDB10032B3C4 /* SessionViewController.swift */; };
 		575F00102C7BFE950032B3C4 /* SessionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F000F2C7BFE940032B3C4 /* SessionPresenter.swift */; };
 		575F00122C7C01480032B3C4 /* SessionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F00112C7C01480032B3C4 /* SessionInteractor.swift */; };
+		575F00152C7D59A00032B3C4 /* AssociatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F00142C7D59A00032B3C4 /* AssociatesView.swift */; };
 		5772692C2C614A1F002A4638 /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772692B2C614A1E002A4638 /* SegmentView.swift */; };
 		5772692F2C615C9D002A4638 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772692E2C615C9D002A4638 /* HomePresenter.swift */; };
 		577269322C615E3D002A4638 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577269312C615E3D002A4638 /* HomeInteractor.swift */; };
@@ -65,6 +66,7 @@
 		575F000B2C7BFDB10032B3C4 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
 		575F000F2C7BFE940032B3C4 /* SessionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionPresenter.swift; sourceTree = "<group>"; };
 		575F00112C7C01480032B3C4 /* SessionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInteractor.swift; sourceTree = "<group>"; };
+		575F00142C7D59A00032B3C4 /* AssociatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatesView.swift; sourceTree = "<group>"; };
 		5772692B2C614A1E002A4638 /* SegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
 		5772692E2C615C9D002A4638 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		577269312C615E3D002A4638 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
@@ -179,6 +181,14 @@
 				575F00112C7C01480032B3C4 /* SessionInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		575F00132C7D59920032B3C4 /* AssociatesCard */ = {
+			isa = PBXGroup;
+			children = (
+				575F00142C7D59A00032B3C4 /* AssociatesView.swift */,
+			);
+			path = AssociatesCard;
 			sourceTree = "<group>";
 		};
 		5772692D2C615C90002A4638 /* Presenter */ = {
@@ -328,6 +338,7 @@
 		5772695D2C6A786A002A4638 /* Session */ = {
 			isa = PBXGroup;
 			children = (
+				575F00132C7D59920032B3C4 /* AssociatesCard */,
 				575F000E2C7BFE850032B3C4 /* Interactor */,
 				575F000D2C7BFE7F0032B3C4 /* Presenter */,
 				5772695F2C6A7969002A4638 /* CardOfLider */,
@@ -667,6 +678,7 @@
 				5772692F2C615C9D002A4638 /* HomePresenter.swift in Sources */,
 				5785FAF42BD46F68003C07C1 /* PaxtuCoordinator.swift in Sources */,
 				574A755D2BCC5B3A0042E310 /* AppDelegate.swift in Sources */,
+				575F00152C7D59A00032B3C4 /* AssociatesView.swift in Sources */,
 				5785FAD62BCCAA17003C07C1 /* UIViewExtension.swift in Sources */,
 				577269562C683B2E002A4638 /* EventsViewController.swift in Sources */,
 				5728BB8D2BCC76AA002BC212 /* LoginViewController.swift in Sources */,
