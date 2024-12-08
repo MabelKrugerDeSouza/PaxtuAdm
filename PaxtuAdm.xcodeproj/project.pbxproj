@@ -17,6 +17,7 @@
 		575F00102C7BFE950032B3C4 /* SessionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F000F2C7BFE940032B3C4 /* SessionPresenter.swift */; };
 		575F00122C7C01480032B3C4 /* SessionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F00112C7C01480032B3C4 /* SessionInteractor.swift */; };
 		575F00152C7D59A00032B3C4 /* AssociatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F00142C7D59A00032B3C4 /* AssociatesView.swift */; };
+		576E08212C874A0400DBC3D7 /* HeaderInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E08202C874A0400DBC3D7 /* HeaderInformationView.swift */; };
 		5772692C2C614A1F002A4638 /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772692B2C614A1E002A4638 /* SegmentView.swift */; };
 		5772692F2C615C9D002A4638 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772692E2C615C9D002A4638 /* HomePresenter.swift */; };
 		577269322C615E3D002A4638 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577269312C615E3D002A4638 /* HomeInteractor.swift */; };
@@ -33,6 +34,7 @@
 		5772695C2C683E6C002A4638 /* EventsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772695B2C683E6C002A4638 /* EventsInteractor.swift */; };
 		577269612C6A7991002A4638 /* CardOfLiderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577269602C6A7991002A4638 /* CardOfLiderView.swift */; };
 		577269632C6BCF16002A4638 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577269622C6BCF16002A4638 /* SessionView.swift */; };
+		577721A42D05E76F008C52FF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 577721A32D05E76F008C52FF /* Lottie */; };
 		5785FAD32BCCA223003C07C1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAD22BCCA223003C07C1 /* LoginView.swift */; };
 		5785FAD62BCCAA17003C07C1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAD52BCCAA17003C07C1 /* UIViewExtension.swift */; };
 		5785FAD82BCF3DD7003C07C1 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FAD72BCF3DD7003C07C1 /* UIImageExtension.swift */; };
@@ -51,7 +53,6 @@
 		5785FB092BDE9170003C07C1 /* HeaderHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FB082BDE9170003C07C1 /* HeaderHomeView.swift */; };
 		5785FB112BDED564003C07C1 /* CardTabViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FB102BDED564003C07C1 /* CardTabViewCell.swift */; };
 		5785FB132BDED974003C07C1 /* CardTapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FB122BDED974003C07C1 /* CardTapModel.swift */; };
-		C56C78686B8A521360BF615E /* Pods_PaxtuAdm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD68841696045AC52334D930 /* Pods_PaxtuAdm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		575F000F2C7BFE940032B3C4 /* SessionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionPresenter.swift; sourceTree = "<group>"; };
 		575F00112C7C01480032B3C4 /* SessionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInteractor.swift; sourceTree = "<group>"; };
 		575F00142C7D59A00032B3C4 /* AssociatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatesView.swift; sourceTree = "<group>"; };
+		576E08202C874A0400DBC3D7 /* HeaderInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderInformationView.swift; sourceTree = "<group>"; };
 		5772692B2C614A1E002A4638 /* SegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
 		5772692E2C615C9D002A4638 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		577269312C615E3D002A4638 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
@@ -101,9 +103,6 @@
 		5785FB082BDE9170003C07C1 /* HeaderHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderHomeView.swift; sourceTree = "<group>"; };
 		5785FB102BDED564003C07C1 /* CardTabViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTabViewCell.swift; sourceTree = "<group>"; };
 		5785FB122BDED974003C07C1 /* CardTapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTapModel.swift; sourceTree = "<group>"; };
-		B3BE58D04DC770A9157FA831 /* Pods-PaxtuAdm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaxtuAdm.release.xcconfig"; path = "Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm.release.xcconfig"; sourceTree = "<group>"; };
-		B97931C39CE59FFAE41399D8 /* Pods-PaxtuAdm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaxtuAdm.debug.xcconfig"; path = "Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm.debug.xcconfig"; sourceTree = "<group>"; };
-		DD68841696045AC52334D930 /* Pods_PaxtuAdm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaxtuAdm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C56C78686B8A521360BF615E /* Pods_PaxtuAdm.framework in Frameworks */,
+				577721A42D05E76F008C52FF /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +120,6 @@
 		07B531FA5CDE44B576CBDCB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DD68841696045AC52334D930 /* Pods_PaxtuAdm.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,7 +137,6 @@
 			children = (
 				574A755B2BCC5B3A0042E310 /* PaxtuAdm */,
 				574A755A2BCC5B3A0042E310 /* Products */,
-				81935EF5DC94D8E3C646AC66 /* Pods */,
 				07B531FA5CDE44B576CBDCB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -189,6 +186,45 @@
 				575F00142C7D59A00032B3C4 /* AssociatesView.swift */,
 			);
 			path = AssociatesCard;
+			sourceTree = "<group>";
+		};
+		576E081B2C8749B500DBC3D7 /* Associate */ = {
+			isa = PBXGroup;
+			children = (
+				576E081E2C8749D800DBC3D7 /* Interactor */,
+				576E081D2C8749C700DBC3D7 /* Presenter */,
+				576E081C2C8749C100DBC3D7 /* UI */,
+			);
+			path = Associate;
+			sourceTree = "<group>";
+		};
+		576E081C2C8749C100DBC3D7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		576E081D2C8749C700DBC3D7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		576E081E2C8749D800DBC3D7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		576E081F2C8749E800DBC3D7 /* HeaderInformation */ = {
+			isa = PBXGroup;
+			children = (
+				576E08202C874A0400DBC3D7 /* HeaderInformationView.swift */,
+			);
+			path = HeaderInformation;
 			sourceTree = "<group>";
 		};
 		5772692D2C615C90002A4638 /* Presenter */ = {
@@ -458,6 +494,7 @@
 		5785FAEF2BD46B13003C07C1 /* Paxtu */ = {
 			isa = PBXGroup;
 			children = (
+				576E081B2C8749B500DBC3D7 /* Associate */,
 				5772695D2C6A786A002A4638 /* Session */,
 				577269512C67CB56002A4638 /* Events */,
 				577269422C66EC64002A4638 /* NewActivity */,
@@ -472,6 +509,7 @@
 		5785FAF22BD46F5E003C07C1 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				576E081F2C8749E800DBC3D7 /* HeaderInformation */,
 				5785FAF32BD46F68003C07C1 /* PaxtuCoordinator.swift */,
 			);
 			path = Commons;
@@ -524,15 +562,6 @@
 			path = CardsOfTabs;
 			sourceTree = "<group>";
 		};
-		81935EF5DC94D8E3C646AC66 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B97931C39CE59FFAE41399D8 /* Pods-PaxtuAdm.debug.xcconfig */,
-				B3BE58D04DC770A9157FA831 /* Pods-PaxtuAdm.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -540,17 +569,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 574A75702BCC5B3B0042E310 /* Build configuration list for PBXNativeTarget "PaxtuAdm" */;
 			buildPhases = (
-				77E0B6BDD2F84F5C7B98396F /* [CP] Check Pods Manifest.lock */,
 				574A75552BCC5B3A0042E310 /* Sources */,
 				574A75562BCC5B3A0042E310 /* Frameworks */,
 				574A75572BCC5B3A0042E310 /* Resources */,
-				FD9CB6D5810CFE7BCA690638 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = PaxtuAdm;
+			packageProductDependencies = (
+				577721A32D05E76F008C52FF /* Lottie */,
+			);
 			productName = PaxtuAdm;
 			productReference = 574A75592BCC5B3A0042E310 /* PaxtuAdm.app */;
 			productType = "com.apple.product-type.application";
@@ -579,6 +609,9 @@
 				Base,
 			);
 			mainGroup = 574A75502BCC5B3A0042E310;
+			packageReferences = (
+				577721A22D05E76F008C52FF /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 574A755A2BCC5B3A0042E310 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -599,48 +632,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		77E0B6BDD2F84F5C7B98396F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PaxtuAdm-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD9CB6D5810CFE7BCA690638 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PaxtuAdm/Pods-PaxtuAdm-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		574A75552BCC5B3A0042E310 /* Sources */ = {
@@ -689,6 +680,7 @@
 				577269632C6BCF16002A4638 /* SessionView.swift in Sources */,
 				5785FAD82BCF3DD7003C07C1 /* UIImageExtension.swift in Sources */,
 				5785FB062BD4AA94003C07C1 /* HomeView.swift in Sources */,
+				576E08212C874A0400DBC3D7 /* HeaderInformationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,7 +808,6 @@
 		};
 		574A75712BCC5B3B0042E310 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B97931C39CE59FFAE41399D8 /* Pods-PaxtuAdm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -845,7 +836,6 @@
 		};
 		574A75722BCC5B3B0042E310 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3BE58D04DC770A9157FA831 /* Pods-PaxtuAdm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -894,6 +884,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		577721A22D05E76F008C52FF /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		577721A32D05E76F008C52FF /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 577721A22D05E76F008C52FF /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		574A75652BCC5B3A0042E310 /* PaxtuAdm.xcdatamodeld */ = {

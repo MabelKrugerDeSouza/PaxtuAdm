@@ -17,13 +17,16 @@ final class SessionPresenter: SessionPresenterProtocol {
     func presentView() {
         view?.showView(
             with: SessionViewModel(
-                navigationTitle: PaxtuNavigationModel(buttonImage: .backIcon, titleHeader: "Sessão"),
-                imageOfSession: UIImage.sessionRover,
-                sessionName: "Clã do Max",
-                liderTitle: "Mestria",
-                listOfLider: getLiderOfSession(),
+                headerInformationModel:
+                    HeaderInformationViewModel(
+                        navigationTitle: PaxtuNavigationModel(buttonImage: .backIcon, titleHeader: "Sessão"),
+                        imageOfSession: UIImage.sessionRover,
+                        sessionName: "Clã do Max",
+                        liderTitle: "Mestria",
+                        listOfLider: getLiderOfSession()
+                    ),
                 associatesTitle: "Associados",
-                listOfAssociates: getListOfAssociates()
+                listOfAssociates:  getListOfAssociates()
             )
         )
     }

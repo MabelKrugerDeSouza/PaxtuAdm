@@ -8,14 +8,8 @@
 import UIKit
 
 final class SessionView: UIView {
-    private let navigation: PaxtuNavigation
+    private let headerInformation: HeaderInformationView
     private let scrollView: UIScrollView
-    private let viewOfColor: UIView
-    private let iconImage: UIImageView
-    private let nameOfSession: UILabel
-    private let liderHeader: UILabel
-    private let contentStackLider: UIStackView
-    private let horizontalScroll: UIScrollView
     private let associationHeader: UILabel
     private let contentStackView: UIStackView
     
@@ -23,14 +17,8 @@ final class SessionView: UIView {
     var onActionOfCardAssociate: ((String) -> Void)?
     
     init() {
-        navigation = PaxtuNavigation()
+        headerInformation = HeaderInformationView()
         scrollView = UIScrollView()
-        viewOfColor = UIView()
-        iconImage = UIImageView()
-        nameOfSession = UILabel()
-        liderHeader = UILabel()
-        contentStackLider = UIStackView()
-        horizontalScroll = UIScrollView()
         associationHeader = UILabel()
         contentStackView = UIStackView()
         
@@ -47,70 +35,34 @@ final class SessionView: UIView {
     
     private func setupConstraint() {
         addSubviews(
+            headerInformation,
             scrollView,
-            viewOfColor,
-            iconImage,
-            nameOfSession
+            associationHeader
         )
         
         scrollView.addSubviews(
-            liderHeader,
-            horizontalScroll,
-            associationHeader,
             contentStackView
         )
         
-        viewOfColor.addSubview(navigation)
-        horizontalScroll.addSubview(contentStackLider)
         
         subviews.forEach({$0.translatesAutoresizingMaskIntoConstraints = false})
         scrollView.subviews.forEach({$0.translatesAutoresizingMaskIntoConstraints = false})
-        viewOfColor.subviews.forEach({$0.translatesAutoresizingMaskIntoConstraints = false})
-        horizontalScroll.subviews.forEach({$0.translatesAutoresizingMaskIntoConstraints = false})
         
         NSLayoutConstraint.activate([
-            viewOfColor.topAnchor.constraint(equalTo: topAnchor),
-            viewOfColor.leftAnchor.constraint(equalTo: leftAnchor),
-            viewOfColor.rightAnchor.constraint(equalTo: rightAnchor),
-            viewOfColor.heightAnchor.constraint(equalToConstant: 199),
+            headerInformation.topAnchor.constraint(equalTo: topAnchor),
+            headerInformation.leftAnchor.constraint(equalTo: leftAnchor),
+            headerInformation.rightAnchor.constraint(equalTo: rightAnchor),
             
-            navigation.topAnchor.constraint(equalTo: viewOfColor.topAnchor, constant: 16),
-            navigation.leftAnchor.constraint(equalTo: viewOfColor.leftAnchor),
-            navigation.rightAnchor.constraint(equalTo: viewOfColor.rightAnchor, constant: -24),
+            associationHeader.topAnchor.constraint(equalTo: headerInformation.bottomAnchor, constant: 8),
+            associationHeader.leftAnchor.constraint(equalTo: leftAnchor, constant: 24),
+            associationHeader.rightAnchor.constraint(equalTo: rightAnchor, constant: -24),
             
-            iconImage.centerXAnchor.constraint(equalTo: centerXAnchor),
-            iconImage.widthAnchor.constraint(equalToConstant: 141),
-            iconImage.heightAnchor.constraint(equalToConstant: 139),
-            iconImage.topAnchor.constraint(equalTo: viewOfColor.topAnchor, constant: 130),
-            
-            nameOfSession.topAnchor.constraint(equalTo: iconImage.bottomAnchor, constant: 24),
-            nameOfSession.centerXAnchor.constraint(equalTo: centerXAnchor),
-            
-            scrollView.topAnchor.constraint(equalTo: nameOfSession.bottomAnchor, constant: 8),
+            scrollView.topAnchor.constraint(equalTo: associationHeader.bottomAnchor, constant: 8),
             scrollView.leftAnchor.constraint(equalTo: leftAnchor),
             scrollView.rightAnchor.constraint(equalTo: rightAnchor),
             scrollView.bottomAnchor.constraint(equalTo: bottomAnchor),
             
-            liderHeader.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 16),
-            liderHeader.leftAnchor.constraint(equalTo: scrollView.leftAnchor, constant: 24),
-            liderHeader.rightAnchor.constraint(equalTo: rightAnchor, constant: -24),
-            
-            horizontalScroll.topAnchor.constraint(equalTo: liderHeader.bottomAnchor, constant: 16),
-            horizontalScroll.leftAnchor.constraint(equalTo: scrollView.leftAnchor, constant: 24),
-            horizontalScroll.rightAnchor.constraint(equalTo: rightAnchor, constant: -24),
-            horizontalScroll.heightAnchor.constraint(equalToConstant: 170),
-            
-            contentStackLider.topAnchor.constraint(equalTo: horizontalScroll.topAnchor),
-            contentStackLider.leftAnchor.constraint(equalTo: horizontalScroll.leftAnchor),
-            contentStackLider.rightAnchor.constraint(equalTo: horizontalScroll.rightAnchor),
-            contentStackLider.bottomAnchor.constraint(equalTo: horizontalScroll.bottomAnchor),
-            contentStackLider.heightAnchor.constraint(equalTo: horizontalScroll.heightAnchor),
-            
-            associationHeader.topAnchor.constraint(equalTo: horizontalScroll.bottomAnchor, constant: 16),
-            associationHeader.leftAnchor.constraint(equalTo: scrollView.leftAnchor, constant: 24),
-            associationHeader.rightAnchor.constraint(equalTo: rightAnchor, constant: -24),
-            
-            contentStackView.topAnchor.constraint(equalTo: associationHeader.bottomAnchor, constant: 24),
+            contentStackView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 8),
             contentStackView.leftAnchor.constraint(equalTo: scrollView.leftAnchor, constant: 24),
             contentStackView.rightAnchor.constraint(equalTo: rightAnchor, constant: -24),
             contentStackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -32)
@@ -120,42 +72,13 @@ final class SessionView: UIView {
     private func renderView() {
         backgroundColor = .white
         
-        viewOfColor.backgroundColor = .lightRed.withAlphaComponent(0.5)
-        
-        iconImage.layer.cornerRadius = 31
-        iconImage.clipsToBounds = true
-        
-        nameOfSession.font = .HelveticaNeueBoldTwentyFour
-        nameOfSession.textAlignment = .center
-        nameOfSession.numberOfLines = 0
-        
-        liderHeader.font = .HelveticaNeueBoldSixteen
-        liderHeader.textAlignment = .left
-        liderHeader.numberOfLines = 0
-        
         associationHeader.font = .HelveticaNeueBoldSixteen
         associationHeader.textAlignment = .left
         associationHeader.numberOfLines = 0
         
-        navigation.onNavigationAction = {[weak self] in
+        headerInformation.onBackButtonAction = {[weak self] in
             self?.onBackButtonAction?()
         }
-    }
-    
-    private func setupContentStackViewLider(listOfLider: [CardOfLiderViewModel]) {
-        contentStackLider.axis = .horizontal
-        contentStackLider.spacing = 10
-        contentStackLider.translatesAutoresizingMaskIntoConstraints = false
-        contentStackLider.subviews.forEach { $0.removeFromSuperview() }
-        
-        listOfLider.forEach { model in
-            let itemView = CardOfLiderView()
-            itemView.setupData(with: model)
-            contentStackLider.addArrangedSubview(itemView)
-            contentStackLider.setCustomSpacing(24, after: itemView)
-        }
-        
-        contentStackLider.layoutIfNeeded()
     }
     
     private func setupContentStackView(listOfAssociates: [String]) {
@@ -175,11 +98,7 @@ final class SessionView: UIView {
     }
     
     func setupData(with model: SessionViewModel) {
-        navigation.setupData(with: model.navigationTitle)
-        iconImage.image = model.imageOfSession
-        nameOfSession.text = model.sessionName
-        liderHeader.text = model.liderTitle
-        setupContentStackViewLider(listOfLider: model.listOfLider)
+        headerInformation.setupData(with: model.headerInformationModel)
         associationHeader.text = model.associatesTitle
         setupContentStackView(listOfAssociates: model.listOfAssociates)
     }
@@ -187,11 +106,7 @@ final class SessionView: UIView {
 
 
 struct SessionViewModel {
-    let navigationTitle: PaxtuNavigationModel
-    let imageOfSession: UIImage
-    let sessionName: String
-    let liderTitle: String
-    let listOfLider: [CardOfLiderViewModel]
+    let headerInformationModel: HeaderInformationViewModel
     let associatesTitle: String
     let listOfAssociates: [String]
 }
