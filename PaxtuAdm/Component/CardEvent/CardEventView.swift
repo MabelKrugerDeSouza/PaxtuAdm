@@ -38,9 +38,12 @@ final class CardEventView: UIView {
         backgroundColor = .lightGray
         layer.cornerRadius = 20
         clipsToBounds = true
+        layer.borderColor = UIColor.black.cgColor
+        layer.borderWidth = 1
         
         // Configure informationData
         informationData.font = .HelveticaNeueBoldThirtySix
+        informationData.textColor = .black
         informationData.textAlignment = .center
         informationData.numberOfLines = 0
         
@@ -55,10 +58,12 @@ final class CardEventView: UIView {
         stackFromInformation.addArrangedSubview(descriptionOfEvent)
         
         nameOfEvent.font = .HelveticaNeueBoldSixteen
+        nameOfEvent.textColor = .black
         nameOfEvent.textAlignment = .left
         nameOfEvent.numberOfLines = 0
         
         descriptionOfEvent.font = .HelveticaNeueRegularTwelve
+        descriptionOfEvent.textColor = .black
         descriptionOfEvent.textAlignment = .left
         descriptionOfEvent.numberOfLines = 0
         

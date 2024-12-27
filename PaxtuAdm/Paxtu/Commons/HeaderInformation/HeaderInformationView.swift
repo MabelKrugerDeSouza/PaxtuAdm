@@ -47,8 +47,6 @@ final class HeaderInformationView: UIView {
             horizontalScroll
         )
         
-        
-        
         viewOfColor.addSubview(navigation)
         horizontalScroll.addSubview(contentStackLider)
         
@@ -66,23 +64,23 @@ final class HeaderInformationView: UIView {
             navigation.leftAnchor.constraint(equalTo: viewOfColor.leftAnchor),
             navigation.rightAnchor.constraint(equalTo: viewOfColor.rightAnchor, constant: -24),
             
+            iconImage.topAnchor.constraint(equalTo: navigation.bottomAnchor, constant: 60),
             iconImage.centerXAnchor.constraint(equalTo: centerXAnchor),
             iconImage.widthAnchor.constraint(equalToConstant: 141),
             iconImage.heightAnchor.constraint(equalToConstant: 139),
-            iconImage.topAnchor.constraint(equalTo: viewOfColor.topAnchor, constant: 130),
             
             nameOfSession.topAnchor.constraint(equalTo: iconImage.bottomAnchor, constant: 24),
-            nameOfSession.centerXAnchor.constraint(equalTo: centerXAnchor),
+            nameOfSession.leftAnchor.constraint(equalTo: leftAnchor, constant: 16),
+            nameOfSession.rightAnchor.constraint(equalTo: rightAnchor, constant: -16),
             
             liderHeader.topAnchor.constraint(equalTo: nameOfSession.bottomAnchor, constant: 16),
-            liderHeader.leftAnchor.constraint(equalTo: leftAnchor, constant: 24),
-            liderHeader.rightAnchor.constraint(equalTo: rightAnchor, constant: -24),
+            liderHeader.leftAnchor.constraint(equalTo: leftAnchor, constant: 16),
+            liderHeader.rightAnchor.constraint(equalTo: rightAnchor, constant: -16),
             
             horizontalScroll.topAnchor.constraint(equalTo: liderHeader.bottomAnchor, constant: 16),
-            horizontalScroll.leftAnchor.constraint(equalTo: leftAnchor, constant: 24),
-            horizontalScroll.rightAnchor.constraint(equalTo: rightAnchor, constant: -24),
+            horizontalScroll.leftAnchor.constraint(equalTo: leftAnchor, constant: 16),
+            horizontalScroll.rightAnchor.constraint(equalTo: rightAnchor, constant: -16),
             horizontalScroll.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16),
-            horizontalScroll.heightAnchor.constraint(equalToConstant: 170),
             
             contentStackLider.topAnchor.constraint(equalTo: horizontalScroll.topAnchor),
             contentStackLider.leftAnchor.constraint(equalTo: horizontalScroll.leftAnchor),
@@ -94,17 +92,20 @@ final class HeaderInformationView: UIView {
     
     private func renderView() {
         backgroundColor = .white
+        layoutIfNeeded()
         
         viewOfColor.backgroundColor = .lightRed.withAlphaComponent(0.5)
         
         iconImage.layer.cornerRadius = 31
         iconImage.clipsToBounds = true
         
-        nameOfSession.font = .HelveticaNeueBoldTwentyFour
+        nameOfSession.font = .HelveticaNeueBoldTwentyEight
+        nameOfSession.textColor = .black
         nameOfSession.textAlignment = .center
         nameOfSession.numberOfLines = 0
         
-        liderHeader.font = .HelveticaNeueBoldSixteen
+        liderHeader.font = .HelveticaNeueBoldTwentyFour
+        liderHeader.textColor = .black
         liderHeader.textAlignment = .left
         liderHeader.numberOfLines = 0
         

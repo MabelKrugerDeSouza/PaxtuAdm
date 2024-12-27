@@ -72,7 +72,8 @@ final class SessionView: UIView {
     private func renderView() {
         backgroundColor = .white
         
-        associationHeader.font = .HelveticaNeueBoldSixteen
+        associationHeader.font = .HelveticaNeueBoldTwentyFour
+        associationHeader.textColor = .black
         associationHeader.textAlignment = .left
         associationHeader.numberOfLines = 0
         

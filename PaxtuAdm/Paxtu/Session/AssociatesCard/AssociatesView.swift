@@ -53,15 +53,16 @@ final class AssociatesView: UIView {
             icon.topAnchor.constraint(equalTo: nameOfAssociate.topAnchor, constant: 8),
             icon.rightAnchor.constraint(equalTo: controlView.rightAnchor, constant: -8),
             icon.bottomAnchor.constraint(equalTo: nameOfAssociate.bottomAnchor, constant: -8),
-            icon.heightAnchor.constraint(equalToConstant: 12),
-            icon.widthAnchor.constraint(equalToConstant: 12)
+            icon.heightAnchor.constraint(equalToConstant: 8),
+            icon.widthAnchor.constraint(equalToConstant: 10)
         ])
     }
     
     private func renderView() {
         backgroundColor = .clear
         
-        nameOfAssociate.font = .HelveticaNeueRegularSixteen
+        nameOfAssociate.font = .HelveticaNeueRegularEighteen
+        nameOfAssociate.textColor = .black
         nameOfAssociate.textAlignment = .left
         nameOfAssociate.numberOfLines = 0
         

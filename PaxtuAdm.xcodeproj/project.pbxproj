@@ -58,7 +58,7 @@
 /* Begin PBXFileReference section */
 		5728BB8A2BCC685F002BC212 /* launch_screen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launch_screen.json; sourceTree = "<group>"; };
 		5728BB8C2BCC76AA002BC212 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		574A75592BCC5B3A0042E310 /* PaxtuAdm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaxtuAdm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		574A75592BCC5B3A0042E310 /* PaxtuAdm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = PaxtuAdm.app; path = "/Users/mabelkrugerdesouza/Desktop/PaxtuAdm/build/Debug-iphoneos/PaxtuAdm.app"; sourceTree = "<absolute>"; };
 		574A755C2BCC5B3A0042E310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		574A75602BCC5B3A0042E310 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		574A75662BCC5B3A0042E310 /* PaxtuAdm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PaxtuAdm.xcdatamodel; sourceTree = "<group>"; };
@@ -117,13 +117,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07B531FA5CDE44B576CBDCB6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		5728BB892BCC6850002BC212 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,17 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				574A755B2BCC5B3A0042E310 /* PaxtuAdm */,
-				574A755A2BCC5B3A0042E310 /* Products */,
-				07B531FA5CDE44B576CBDCB6 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		574A755A2BCC5B3A0042E310 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				574A75592BCC5B3A0042E310 /* PaxtuAdm.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		574A755B2BCC5B3A0042E310 /* PaxtuAdm */ = {
@@ -612,7 +595,7 @@
 			packageReferences = (
 				577721A22D05E76F008C52FF /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
-			productRefGroup = 574A755A2BCC5B3A0042E310 /* Products */;
+			productRefGroup = 574A75502BCC5B3A0042E310;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

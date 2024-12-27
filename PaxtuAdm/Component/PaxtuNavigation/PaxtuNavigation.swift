@@ -41,8 +41,8 @@ final class PaxtuNavigation: UIView {
             backButton.leftAnchor.constraint(equalTo: leftAnchor, constant: 16),
             backButton.rightAnchor.constraint(equalTo: titleHeader.leftAnchor),
             backButton.bottomAnchor.constraint(equalTo: bottomAnchor),
-            backButton.heightAnchor.constraint(equalToConstant: 32),
-            backButton.widthAnchor.constraint(equalToConstant: 32),
+            backButton.heightAnchor.constraint(equalToConstant: 26),
+            backButton.widthAnchor.constraint(equalToConstant: 28),
             
             titleHeader.topAnchor.constraint(equalTo: backButton.topAnchor),
             titleHeader.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 8),
@@ -54,6 +54,7 @@ final class PaxtuNavigation: UIView {
         backgroundColor = .clear
         
         titleHeader.font = .HelveticaNeueBoldTwelve
+        titleHeader.textColor = .black
         titleHeader.textAlignment = .center
         titleHeader.numberOfLines = 0
         

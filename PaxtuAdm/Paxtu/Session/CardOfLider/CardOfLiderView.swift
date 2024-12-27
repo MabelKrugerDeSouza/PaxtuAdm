@@ -53,7 +53,8 @@ final class CardOfLiderView: UIView {
         icon.clipsToBounds = true
         icon.backgroundColor = .white
         
-        nameOfLider.font = .HelveticaNeueRegularFourteen
+        nameOfLider.font = .HelveticaNeueRegularEighteen
+        nameOfLider.textColor = .black
         nameOfLider.textAlignment = .center
         nameOfLider.numberOfLines = 0
     }

@@ -19,6 +19,7 @@ extension UIFont {
     static let HelveticaNeueSemiBoldSixteen = UIFont(name: "HelveticaNeue-SemiBold", size: 16.0)
     
     //MARK: = Regular
+    static let HelveticaNeueRegularEighteen = UIFont(name: "HelveticaNeue-Regular", size: 18.0)
     static let HelveticaNeueRegularSixteen = UIFont(name: "HelveticaNeue-Regular", size: 16.0)
     static let HelveticaNeueRegularFourteen = UIFont(name: "HelveticaNeue-Regular", size: 14.0)
     static let HelveticaNeueRegularTwelve = UIFont(name: "HelveticaNeue", size: 12.0)
