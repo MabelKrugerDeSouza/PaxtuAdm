@@ -57,7 +57,7 @@ final class SessionView: UIView {
             membersHeader.leftAnchor.constraint(equalTo: leftAnchor, constant: 24),
             membersHeader.rightAnchor.constraint(equalTo: rightAnchor, constant: -24),
             
-            scrollView.topAnchor.constraint(equalTo: associationHeader.bottomAnchor, constant: 8),
+            scrollView.topAnchor.constraint(equalTo: membersHeader.bottomAnchor, constant: 8),
             scrollView.leftAnchor.constraint(equalTo: leftAnchor),
             scrollView.rightAnchor.constraint(equalTo: rightAnchor),
             scrollView.bottomAnchor.constraint(equalTo: bottomAnchor),
