@@ -138,11 +138,3 @@ final class HeaderInformationView: UIView {
         setupContentStackViewLider(listOfLider: model.listOfLider)
     }
 }
-
-struct HeaderInformationViewModel {
-    let navigationTitle: PaxtuNavigationModel
-    let imageOfSession: UIImage
-    let sessionName: String
-    let liderTitle: String
-    let listOfLider: [CardOfLiderViewModel]
-}

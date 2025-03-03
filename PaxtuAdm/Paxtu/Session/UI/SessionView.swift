@@ -10,7 +10,7 @@ import UIKit
 final class SessionView: UIView {
     private let headerInformation: HeaderInformationView
     private let scrollView: UIScrollView
-    private let associationHeader: UILabel
+    private let membersHeader: UILabel
     private let contentStackView: UIStackView
     
     var onBackButtonAction: (() -> Void)?
@@ -19,7 +19,7 @@ final class SessionView: UIView {
     init() {
         headerInformation = HeaderInformationView()
         scrollView = UIScrollView()
-        associationHeader = UILabel()
+        membersHeader = UILabel()
         contentStackView = UIStackView()
         
         super.init(frame: .zero)
@@ -37,7 +37,7 @@ final class SessionView: UIView {
         addSubviews(
             headerInformation,
             scrollView,
-            associationHeader
+            membersHeader
         )
         
         scrollView.addSubviews(
@@ -53,9 +53,9 @@ final class SessionView: UIView {
             headerInformation.leftAnchor.constraint(equalTo: leftAnchor),
             headerInformation.rightAnchor.constraint(equalTo: rightAnchor),
             
-            associationHeader.topAnchor.constraint(equalTo: headerInformation.bottomAnchor, constant: 8),
-            associationHeader.leftAnchor.constraint(equalTo: leftAnchor, constant: 24),
-            associationHeader.rightAnchor.constraint(equalTo: rightAnchor, constant: -24),
+            membersHeader.topAnchor.constraint(equalTo: headerInformation.bottomAnchor, constant: 8),
+            membersHeader.leftAnchor.constraint(equalTo: leftAnchor, constant: 24),
+            membersHeader.rightAnchor.constraint(equalTo: rightAnchor, constant: -24),
             
             scrollView.topAnchor.constraint(equalTo: associationHeader.bottomAnchor, constant: 8),
             scrollView.leftAnchor.constraint(equalTo: leftAnchor),
@@ -72,10 +72,10 @@ final class SessionView: UIView {
     private func renderView() {
         backgroundColor = .white
         
-        associationHeader.font = .HelveticaNeueBoldTwentyFour
-        associationHeader.textColor = .black
-        associationHeader.textAlignment = .left
-        associationHeader.numberOfLines = 0
+        membersHeader.font = .HelveticaNeueBoldTwentyFour
+        membersHeader.textColor = .black
+        membersHeader.textAlignment = .left
+        membersHeader.numberOfLines = 0
         
         headerInformation.onBackButtonAction = {[weak self] in
             self?.onBackButtonAction?()
@@ -100,15 +100,7 @@ final class SessionView: UIView {
     
     func setupData(with model: SessionViewModel) {
         headerInformation.setupData(with: model.headerInformationModel)
-        associationHeader.text = model.associatesTitle
+        membersHeader.text = model.associatesTitle
         setupContentStackView(listOfAssociates: model.listOfAssociates)
     }
 }
-
-
-struct SessionViewModel {
-    let headerInformationModel: HeaderInformationViewModel
-    let associatesTitle: String
-    let listOfAssociates: [String]
-}
-

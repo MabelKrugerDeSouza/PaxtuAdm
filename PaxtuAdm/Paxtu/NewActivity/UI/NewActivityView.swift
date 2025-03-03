@@ -105,9 +105,3 @@ final class NewActivityView: UIView {
         onButtonCreateActivityAction?()
     }
 }
-
-struct NewActivityViewModel {
-    let items: [InputInformationModel]
-    let navigation: PaxtuNavigationModel
-    let buttonTitle: String
-}

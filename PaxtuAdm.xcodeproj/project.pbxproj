@@ -53,12 +53,18 @@
 		5785FB092BDE9170003C07C1 /* HeaderHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FB082BDE9170003C07C1 /* HeaderHomeView.swift */; };
 		5785FB112BDED564003C07C1 /* CardTabViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FB102BDED564003C07C1 /* CardTabViewCell.swift */; };
 		5785FB132BDED974003C07C1 /* CardTapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5785FB122BDED974003C07C1 /* CardTapModel.swift */; };
+		57916ACF2D74D6B000761171 /* AssociateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57916ACE2D74D6B000761171 /* AssociateView.swift */; };
+		57916AD22D761A0600761171 /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57916AD12D761A0600761171 /* SessionViewModel.swift */; };
+		57916AD42D761A2600761171 /* HeaderInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57916AD32D761A2600761171 /* HeaderInformationViewModel.swift */; };
+		57916AD92D761AA600761171 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57916AD82D761AA600761171 /* HomeViewModel.swift */; };
+		57916ADC2D761ADC00761171 /* SegmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57916ADB2D761ADC00761171 /* SegmentViewModel.swift */; };
+		57916AE02D761B3900761171 /* CardOfLiderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57916ADF2D761B3900761171 /* CardOfLiderViewModel.swift */; };
+		57916AE32D761B7800761171 /* NewActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57916AE22D761B7800761171 /* NewActivityViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5728BB8A2BCC685F002BC212 /* launch_screen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launch_screen.json; sourceTree = "<group>"; };
 		5728BB8C2BCC76AA002BC212 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		574A75592BCC5B3A0042E310 /* PaxtuAdm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = PaxtuAdm.app; path = "/Users/mabelkrugerdesouza/Desktop/PaxtuAdm/build/Debug-iphoneos/PaxtuAdm.app"; sourceTree = "<absolute>"; };
 		574A755C2BCC5B3A0042E310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		574A75602BCC5B3A0042E310 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		574A75662BCC5B3A0042E310 /* PaxtuAdm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PaxtuAdm.xcdatamodel; sourceTree = "<group>"; };
@@ -103,6 +109,14 @@
 		5785FB082BDE9170003C07C1 /* HeaderHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderHomeView.swift; sourceTree = "<group>"; };
 		5785FB102BDED564003C07C1 /* CardTabViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTabViewCell.swift; sourceTree = "<group>"; };
 		5785FB122BDED974003C07C1 /* CardTapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTapModel.swift; sourceTree = "<group>"; };
+		57916ACD2D74D55E00761171 /* PaxtuAdm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaxtuAdm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57916ACE2D74D6B000761171 /* AssociateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociateView.swift; sourceTree = "<group>"; };
+		57916AD12D761A0600761171 /* SessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewModel.swift; sourceTree = "<group>"; };
+		57916AD32D761A2600761171 /* HeaderInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderInformationViewModel.swift; sourceTree = "<group>"; };
+		57916AD82D761AA600761171 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		57916ADB2D761ADC00761171 /* SegmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentViewModel.swift; sourceTree = "<group>"; };
+		57916ADF2D761B3900761171 /* CardOfLiderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardOfLiderViewModel.swift; sourceTree = "<group>"; };
+		57916AE22D761B7800761171 /* NewActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewActivityViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				574A755B2BCC5B3A0042E310 /* PaxtuAdm */,
+				57916ACD2D74D55E00761171 /* PaxtuAdm.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,6 +199,7 @@
 		576E081C2C8749C100DBC3D7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				57916ACE2D74D6B000761171 /* AssociateView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -205,6 +221,7 @@
 		576E081F2C8749E800DBC3D7 /* HeaderInformation */ = {
 			isa = PBXGroup;
 			children = (
+				57916AD52D761A6A00761171 /* Model */,
 				576E08202C874A0400DBC3D7 /* HeaderInformationView.swift */,
 			);
 			path = HeaderInformation;
@@ -237,6 +254,7 @@
 		5772693D2C66EB83002A4638 /* Segment */ = {
 			isa = PBXGroup;
 			children = (
+				57916ADA2D761AD400761171 /* Model */,
 				5772693E2C66EB8D002A4638 /* UI */,
 			);
 			path = Segment;
@@ -253,6 +271,7 @@
 		5772693F2C66EBA2002A4638 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				57916AD72D761A9A00761171 /* Model */,
 				577269302C615E29002A4638 /* Interactor */,
 				5772692D2C615C90002A4638 /* Presenter */,
 				5785FB022BD4A91A003C07C1 /* UI */,
@@ -279,6 +298,7 @@
 		577269422C66EC64002A4638 /* NewActivity */ = {
 			isa = PBXGroup;
 			children = (
+				57916AE12D761B7200761171 /* Model */,
 				5772694C2C67C187002A4638 /* Interactor */,
 				5772694B2C67C182002A4638 /* Presenter */,
 				577269432C66EC6D002A4638 /* UI */,
@@ -357,6 +377,7 @@
 		5772695D2C6A786A002A4638 /* Session */ = {
 			isa = PBXGroup;
 			children = (
+				57916AD62D761A7500761171 /* Model */,
 				575F00132C7D59920032B3C4 /* AssociatesCard */,
 				575F000E2C7BFE850032B3C4 /* Interactor */,
 				575F000D2C7BFE7F0032B3C4 /* Presenter */,
@@ -378,6 +399,7 @@
 		5772695F2C6A7969002A4638 /* CardOfLider */ = {
 			isa = PBXGroup;
 			children = (
+				57916ADE2D761B3000761171 /* Model */,
 				577269602C6A7991002A4638 /* CardOfLiderView.swift */,
 			);
 			path = CardOfLider;
@@ -539,10 +561,66 @@
 		5785FB0E2BDED545003C07C1 /* CardsOfTabs */ = {
 			isa = PBXGroup;
 			children = (
-				5785FB122BDED974003C07C1 /* CardTapModel.swift */,
+				57916ADD2D761B1400761171 /* Model */,
 				5785FB102BDED564003C07C1 /* CardTabViewCell.swift */,
 			);
 			path = CardsOfTabs;
+			sourceTree = "<group>";
+		};
+		57916AD52D761A6A00761171 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57916AD32D761A2600761171 /* HeaderInformationViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57916AD62D761A7500761171 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57916AD12D761A0600761171 /* SessionViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57916AD72D761A9A00761171 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57916AD82D761AA600761171 /* HomeViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57916ADA2D761AD400761171 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57916ADB2D761ADC00761171 /* SegmentViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57916ADD2D761B1400761171 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5785FB122BDED974003C07C1 /* CardTapModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57916ADE2D761B3000761171 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57916ADF2D761B3900761171 /* CardOfLiderViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57916AE12D761B7200761171 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57916AE22D761B7800761171 /* NewActivityViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -565,7 +643,7 @@
 				577721A32D05E76F008C52FF /* Lottie */,
 			);
 			productName = PaxtuAdm;
-			productReference = 574A75592BCC5B3A0042E310 /* PaxtuAdm.app */;
+			productReference = 57916ACD2D74D55E00761171 /* PaxtuAdm.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -622,6 +700,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5772694E2C67C19A002A4638 /* NewActivityPresenter.swift in Sources */,
+				57916AD22D761A0600761171 /* SessionViewModel.swift in Sources */,
 				5785FAF12BD46B2E003C07C1 /* LoginInteractor.swift in Sources */,
 				5785FAED2BD46371003C07C1 /* LoginPresenter.swift in Sources */,
 				5785FAD32BCCA223003C07C1 /* LoginView.swift in Sources */,
@@ -634,7 +713,10 @@
 				5785FB132BDED974003C07C1 /* CardTapModel.swift in Sources */,
 				577269322C615E3D002A4638 /* HomeInteractor.swift in Sources */,
 				5785FADD2BD409F0003C07C1 /* UIInputIInformationView.swift in Sources */,
+				57916AE32D761B7800761171 /* NewActivityViewModel.swift in Sources */,
+				57916AD42D761A2600761171 /* HeaderInformationViewModel.swift in Sources */,
 				5785FB112BDED564003C07C1 /* CardTabViewCell.swift in Sources */,
+				57916ADC2D761ADC00761171 /* SegmentViewModel.swift in Sources */,
 				5772692C2C614A1F002A4638 /* SegmentView.swift in Sources */,
 				5785FAF82BD46FC8003C07C1 /* LauchScreenView.swift in Sources */,
 				575F00122C7C01480032B3C4 /* SessionInteractor.swift in Sources */,
@@ -654,12 +736,15 @@
 				574A755D2BCC5B3A0042E310 /* AppDelegate.swift in Sources */,
 				575F00152C7D59A00032B3C4 /* AssociatesView.swift in Sources */,
 				5785FAD62BCCAA17003C07C1 /* UIViewExtension.swift in Sources */,
+				57916ACF2D74D6B000761171 /* AssociateView.swift in Sources */,
 				577269562C683B2E002A4638 /* EventsViewController.swift in Sources */,
 				5728BB8D2BCC76AA002BC212 /* LoginViewController.swift in Sources */,
 				5785FAEA2BD4623C003C07C1 /* LoginModel.swift in Sources */,
 				5785FAE52BD42EA2003C07C1 /* UIColor.swift in Sources */,
 				577269612C6A7991002A4638 /* CardOfLiderView.swift in Sources */,
+				57916AE02D761B3900761171 /* CardOfLiderViewModel.swift in Sources */,
 				577269352C618526002A4638 /* CardEventView.swift in Sources */,
+				57916AD92D761AA600761171 /* HomeViewModel.swift in Sources */,
 				577269632C6BCF16002A4638 /* SessionView.swift in Sources */,
 				5785FAD82BCF3DD7003C07C1 /* UIImageExtension.swift in Sources */,
 				5785FB062BD4AA94003C07C1 /* HomeView.swift in Sources */,

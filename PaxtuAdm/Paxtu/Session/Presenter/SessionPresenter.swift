@@ -25,7 +25,7 @@ final class SessionPresenter: SessionPresenterProtocol {
                         liderTitle: "Mestria",
                         listOfLider: getLiderOfSession()
                     ),
-                associatesTitle: "Associados",
+                associatesTitle: "Membros",
                 listOfAssociates:  getListOfAssociates()
             )
         )

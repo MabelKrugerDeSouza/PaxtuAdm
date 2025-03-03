@@ -143,10 +143,3 @@ class CustomSegmentedControlView: UIView {
         updateButtonLayout(for: segmentedControl.selectedSegmentIndex)
     }
 }
-
-struct SegmentViewModel {
-    let itens: [CardTabModel]
-    
-}
-
-

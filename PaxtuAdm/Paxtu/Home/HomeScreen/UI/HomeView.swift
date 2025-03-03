@@ -96,12 +96,3 @@ final class HomeView: UIView {
         carouselView.images = model.carouselImages
     }
 }
-
-struct HomeViewModel {
-    let itensOfSegment: SegmentViewModel
-    let nameOfUser: String
-    let imagem: UIImage
-    let headerOfActivity: String
-    let informationOfActivity: CardEventViewModel
-    let carouselImages: [UIImage]
-}

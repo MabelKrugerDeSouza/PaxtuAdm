@@ -64,8 +64,3 @@ final class CardOfLiderView: UIView {
         nameOfLider.text = model.name
     }
 }
-
-struct CardOfLiderViewModel {
-    let image: UIImage
-    let name: String
-}
